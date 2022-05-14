@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,300&display=swap');
+
+:root {
+    --clr-primary: #F6D473;
+    --clr-secondary: #4C1360;
+    --shadow-primary: 0px 5px 15px 0px rgba(0,0,0,0.5);
+
+    --font-primary: 'Poppins', sans-serif;
+    --fs-small: 10px;
+    --fs-normal: 14px;
+    --fs-big: 30px;
+    --fs-very-big: 50px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 1px solid black;
+}
+
+body {
+    background-image: url(bg-image/wallpaper.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#page-title {
+    color: white;
+    font-size: var(--fs-big);
+    text-shadow: 5px 5px black;
+}
+
+#heroes,
+#two {
+    font-size: var(--fs-very-big);
+    color: var(--clr-primary);
+}
+
+/*-------------------- Search Bar --------------------*/
+.monster-search {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 2.5rem 0;
+}
+
+#monster-input, 
+.btn-search {
+    background-color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: var(--fs-normal);
+    outline: 0;
+}
+
+/*-------------------- Monster Cards Layout --------------------*/
+.monster-container {
+    background-color: lightgray;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.monster-card {
+    width: 200px;
+    display: flex;
+    flex-direction: column; 
+}
+
+.monster-stats {
+    display: grid;
+    grid-template-columns: 100px 80px;
+    grid-template-rows: 20px 110px;
+    gap: 5px;
+    margin: 2px;
+}
+
+#monster-stat-header {
+    grid-column: 1 / -1;
+    grid-row: 1 / 2;
+}
+
+#monster-stat-names {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
+
+#monster-stat-values {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+
+/*-------------------- Monster Cards Style --------------------*/
+.monster-img {
+    text-align: center;
+}
+
+.monster-id {
+    color: white;
+    font-style: italic;
+    font-size: var(--fs-small);
+}
+
+#monster-stat-names p,
+#monster-stat-values p {
+    font-size: var(--fs-small);
+    font-family: var(--font-primary);
+}
+
+#monster-stat-names p {
+    font-weight: bold;
+}
+
+.monster-info {
+    font-style: italic;
+    font-size: var(--fs-normal);
+}
