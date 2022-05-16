@@ -1,704 +1,1586 @@
-{
-    "knight": [
-        {
-            "id": "001",
-            "name": "peasant",
-            "image": "images/knight/peasant.webp",
-            "faction": "knight",
-            "tier": "1",
-            "upgraded": "no",
-            "size": "small",
-            "attack type": "melee",
-            "movement": "ground",
-            "dwelling": "thatched hut",
-            "cost per unit": "20",
-            "stats": [
-                {
-                    "attack": "1",
-                    "defense": "1",
-                    "hit points": "1",
-                    "damage": "1-1",
-                    "speed": "very slow",
-                    "growth": "12"
-                }
-            ],
-            "info": "The weakest creature, their only redeeming quality is numbers- they are cheap and plentiful."
-        },
-        {
-            "id": "002",
-            "name": "archer",
-            "image": "images/knight/archer.webp",
-            "faction": "knight",
-            "tier": "2",
-            "upgraded": "no",
-            "size": "small",
-            "attack type": "ranged",
-            "movement": "ground",
-            "dwelling": "archery range",
-            "cost per unit": "150",
-            "stats": [
-                {
-                    "attack": "5",
-                    "defense": "3",
-                    "hit points": "10",
-                    "damage": "2-3",
-                    "speed": "very slow",
-                    "growth": "8"
-                }
-            ],
-            "info": "The only range strike unit for the Knight, the slow speed of the Archers can be a setback."
-        },
-        {
-            "id": "003",
-            "name": "ranger",
-            "image": "images/knight/ranger.webp",
-            "faction": "knight",
-            "tier": "2+",
-            "upgraded": "yes",
-            "size": "small",
-            "attack type": "ranged",
-            "movement": "ground",
-            "dwelling": "upg. archery range",
-            "cost per unit": "200",
-            "stats": [
-                {
-                    "attack": "5",
-                    "defense": "3",
-                    "hit points": "10",
-                    "damage": "2-3",
-                    "speed": "average",
-                    "growth": "8"
-                }
-            ],
-            "info": "Fires 2 shots per turn. The Ranger is almost twice as good as an Archer on offense."
-        },
-        {
-            "id": "004",
-            "name": "pikeman",
-            "image": "images/knight/pikeman.webp",
-            "faction": "knight",
-            "tier": "3",
-            "upgraded": "no",
-            "size": "small",
-            "attack type": "melee",
-            "movement": "ground",
-            "dwelling": "blacksmith",
-            "cost per unit": "200",
-            "stats": [
-                {
-                    "attack": "5",
-                    "defense": "9",
-                    "hit points": "15",
-                    "damage": "3-4",
-                    "speed": "average",
-                    "growth": "5"
-                }
-            ],
-            "info": "Though weak on offense, the Pikemen's Defense allows them to last in battle."
-        },
-        {
-            "id": "005",
-            "name": "veteran pikeman",
-            "image": "images/knight/veteran_pikeman.webp",
-            "faction": "knight",
-            "tier": "3+",
-            "upgraded": "yes",
-            "size": "small",
-            "attack type": "melee",
-            "movement": "ground",
-            "dwelling": "upg. blacksmith",
-            "cost per unit": "250",
-            "stats": [
-                {
-                    "attack": "5",
-                    "defense": "9",
-                    "hit points": "20",
-                    "damage": "3-4",
-                    "speed": "fast",
-                    "growth": "5"
-                }
-            ],
-            "info": "The upgrade of the Pikeman gives increased speed and hit points."
-        },
-        {
-            "id": "006",
-            "name": "swordsman",
-            "image": "images/knight/swordsman.webp",
-            "faction": "knight",
-            "tier": "4",
-            "upgraded": "no",
-            "size": "small",
-            "attack type": "melee",
-            "movement": "ground",
-            "dwelling": "armory",
-            "cost per unit": "250",
-            "stats": [
-                {
-                    "attack": "7",
-                    "defense": "9",
-                    "hit points": "25",
-                    "damage": "4-6",
-                    "speed": "average",
-                    "growth": "4"
-                }
-            ],
-            "info": "Swordsmen are tougher than Pikemen, and do considerably more damage."
-        },
-        {
-            "id": "007",
-            "name": "master swordsman",
-            "image": "images/knight/master_swordsman.webp",
-            "faction": "knight",
-            "tier": "4+",
-            "upgraded": "yes",
-            "size": "small",
-            "attack type": "melee",
-            "movement": "ground",
-            "dwelling": "upg. armory",
-            "cost per unit": "300",
-            "stats": [
-                {
-                    "attack": "7",
-                    "defense": "9",
-                    "hit points": "30",
-                    "damage": "4-6",
-                    "speed": "fast",
-                    "growth": "4"
-                }
-            ],
-            "info": "The Swordsman upgrade gives increased speed and hit points."
-        },
-        {
-            "id": "008",
-            "name": "cavalry",
-            "image": "images/knight/cavalry.webp",
-            "faction": "knight",
-            "tier": "5",
-            "upgraded": "no",
-            "size": "large",
-            "attack type": "melee",
-            "movement": "ground",
-            "dwelling": "jousting arena",
-            "cost per unit": "300",
-            "stats": [
-                {
-                    "attack": "10",
-                    "defense": "9",
-                    "hit points": "30",
-                    "damage": "5-10",
-                    "speed": "very fast",
-                    "growth": "3"
-                }
-            ],
-            "info": "Cavalry deal considerable damage, and their high speed allows them to manuever easily."
-        },
-        {
-            "id": "009",
-            "name": "champion",
-            "image": "images/knight/champion.webp",
-            "faction": "knight",
-            "tier": "5+",
-            "upgraded": "yes",
-            "size": "large",
-            "attack type": "melee",
-            "movement": "ground",
-            "dwelling": "upg. jousting arena",
-            "cost per unit": "375",
-            "stats": [
-                {
-                    "attack": "10",
-                    "defense": "9",
-                    "hit points": "40",
-                    "damage": "5-10",
-                    "speed": "ultra fast",
-                    "growth": "3"
-                }
-            ],
-            "info": "One of the fastest units, the Cavalry upgrade can move around almost at will on the battlefield."
-        },
-        {
-            "id": "010",
-            "name": "paladin",
-            "image": "images/knight/paladin.webp",
-            "faction": "knight",
-            "tier": "6",
-            "upgraded": "no",
-            "size": "small",
-            "attack type": "melee",
-            "movement": "ground",
-            "dwelling": "cathedral",
-            "cost per unit": "600",
-            "stats": [
-                {
-                    "attack": "11",
-                    "defense": "12",
-                    "hit points": "50",
-                    "damage": "10-20",
-                    "speed": "fast",
-                    "growth": "2"
-                }
-            ],
-            "info": "2 attacks. Paladins are best suited on offense, where they can best use their ability to strike twice."
-        },
-        {
-            "id": "011",
-            "name": "crusader",
-            "image": "images/knight/crusader.webp",
-            "faction": "knight",
-            "tier": "6+",
-            "upgraded": "yes",
-            "size": "small",
-            "attack type": "melee",
-            "movement": "ground",
-            "dwelling": "upg. cathedral",
-            "cost per unit": "1000",
-            "stats": [
-                {
-                    "attack": "11",
-                    "defense": "12",
-                    "hit points": "65",
-                    "damage": "10-20",
-                    "speed": "very fast",
-                    "growth": "2"
-                }
-            ],
-            "info": "2 attacks. Immune to curse. x2 damage vs. undead."
-        }
-    ],
-    "barbarian": [
-        {
-            "id": "012",
-            "name": "goblin",
-            "image": "images/barbarian/goblin.webp",
-            "faction": "barbarian",
-            "tier": "1",
-            "upgraded": "no",
-            "size": "small",
-            "attack type": "melee",
-            "movement": "ground",
-            "dwelling": "hut",
-            "cost per unit": "40",
-            "stats": [
-                {
-                    "attack": "3",
-                    "defense": "1",
-                    "hit points": "3",
-                    "damage": "1-2",
-                    "speed": "average",
-                    "growth": "10"
-                }
-            ],
-            "info": "A solid low level creature, packs of Goblins are a match for most level two creatures."
-        },
-        {
-            "id": "013",
-            "name": "orc",
-            "image": "images/barbarian/orc.webp",
-            "faction": "barbarian",
-            "tier": "2",
-            "upgraded": "no",
-            "size": "small",
-            "attack type": "ranged",
-            "movement": "ground",
-            "dwelling": "stick hut",
-            "cost per unit": "140",
-            "stats": [
-                {
-                    "attack": "3",
-                    "defense": "4",
-                    "hit points": "10",
-                    "damage": "2-3",
-                    "speed": "very slow",
-                    "growth": "8"
-                }
-            ],
-            "info": "Though slow, Orcs provide range attack until Trolls can be recruited."
-        },
-        {
-            "id": "014",
-            "name": "orc chief",
-            "image": "images/barbarian/orc_chieftain.webp",
-            "faction": "barbarian",
-            "tier": "2+",
-            "upgraded": "yes",
-            "size": "small",
-            "attack type": "ranged",
-            "movement": "ground",
-            "dwelling": "upg. stick hut",
-            "cost per unit": "175",
-            "stats": [
-                {
-                    "attack": "3",
-                    "defense": "4",
-                    "hit points": "15",
-                    "damage": "3-4",
-                    "speed": "slow",
-                    "growth": "8"
-                }
-            ],
-            "info": "The upgrade to the Orcs gives them longer durabilty in combat."
-        },
-        {
-            "id": "015",
-            "name": "wolf",
-            "image": "images/barbarian/wolf.webp",
-            "faction": "barbarian",
-            "tier": "3",
-            "upgraded": "no",
-            "size": "large",
-            "attack type": "melee",
-            "movement": "ground",
-            "dwelling": "den",
-            "cost per unit": "200",
-            "stats": [
-                {
-                    "attack": "6",
-                    "defense": "2",
-                    "hit points": "20",
-                    "damage": "3-5",
-                    "speed": "very fast",
-                    "growth": "5"
-                }
-            ],
-            "info": "2 Attacks. Wolves are incredible offensive units, but they need to be used carefully because they cannot take damage well."
-        },
-        {
-            "id": "016",
-            "name": "ogre",
-            "image": "images/barbarian/ogre.webp",
-            "faction": "barbarian",
-            "tier": "4",
-            "upgraded": "no",
-            "size": "small",
-            "attack type": "melee",
-            "movement": "ground",
-            "dwelling": "adobe",
-            "cost per unit": "300",
-            "stats": [
-                {
-                    "attack": "9",
-                    "defense": "5",
-                    "hit points": "40",
-                    "damage": "4-6",
-                    "speed": "very slow",
-                    "growth": "4"
-                }
-            ],
-            "info": "Ogres are the anchor of the Barbarian units. Though tough, Ogres are very slow on the battlefield, making it difficult for them to attack."
-        },
-        {
-            "id": "017",
-            "name": "ogre lord",
-            "image": "images/barbarian/ogre_lord.webp",
-            "faction": "barbarian",
-            "tier": "4+",
-            "upgraded": "yes",
-            "size": "small",
-            "attack type": "melee",
-            "movement": "ground",
-            "dwelling": "upg. adobe",
-            "cost per unit": "500",
-            "stats": [
-                {
-                    "attack": "9",
-                    "defense": "5",
-                    "hit points": "60",
-                    "damage": "5-7",
-                    "speed": "average",
-                    "growth": "4"
-                }
-            ],
-            "info": "The upgrade to the Ogre not only adds speed, but a sizeable increase in hit points."
-        },
-        {
-            "id": "018",
-            "name": "troll",
-            "image": "images/barbarian/troll.webp",
-            "faction": "barbarian",
-            "tier": "5",
-            "upgraded": "no",
-            "size": "small",
-            "attack type": "ranged",
-            "movement": "ground",
-            "dwelling": "bridge",
-            "cost per unit": "600",
-            "stats": [
-                {
-                    "attack": "10",
-                    "defense": "5",
-                    "hit points": "40",
-                    "damage": "5-7",
-                    "speed": "average",
-                    "growth": "3"
-                }
-            ],
-            "info": "Regenerates. The ability to regenerate and strike at range makes trolls incredibly useful in castle sieges."
-        },
-        {
-            "id": "019",
-            "name": "war troll",
-            "image": "images/barbarian/war_troll.webp",
-            "faction": "barbarian",
-            "tier": "5+",
-            "upgraded": "yes",
-            "size": "small",
-            "attack type": "ranged",
-            "movement": "ground",
-            "dwelling": "upg. bridge",
-            "cost per unit": "700",
-            "stats": [
-                {
-                    "attack": "10",
-                    "defense": "5",
-                    "hit points": "40",
-                    "damage": "7-9",
-                    "speed": "fast",
-                    "growth": "3"
-                }
-            ],
-            "info": "Regenerates. The Troll upgrade increases in damage and speed, while keeping the ability to regenerate."
-        },
-        {
-            "id": "020",
-            "name": "cyclops",
-            "image": "images/barbarian/cyclops.webp",
-            "faction": "barbarian",
-            "tier": "6",
-            "upgraded": "no",
-            "size": "small",
-            "attack type": "melee",
-            "movement": "ground",
-            "dwelling": "pyramid",
-            "cost per unit": ["750", "1 Crystal"],
-            "stats": [
-                {
-                    "attack": "12",
-                    "defense": "9",
-                    "hit points": "80",
-                    "damage": "12-24",
-                    "speed": "fast",
-                    "growth": "2"
-                }
-            ],
-            "info": "Attack affects 2 spaces, 20% chance to Paralyze creatures. Cyclopes are powerful ground combatants."
-        }
-    ],
-    "sorceress": [
-        {
-            "id": "021",
-            "name": "sprite",
-            "image": "images/sorceress/sprite.webp",
-            "faction": "sorceress",
-            "tier": "1",
-            "upgraded": "no",
-            "size": "small",
-            "attack type": "melee",
-            "movement": "flying",
-            "dwelling": "treehouse",
-            "cost per unit": "50",
-            "stats": [
-                {
-                    "attack": "4",
-                    "defense": "2",
-                    "hit points": "2",
-                    "damage": "1-2",
-                    "speed": "average",
-                    "growth": "8"
-                }
-            ],
-            "info": "Flies. Creatures attacked by Sprites cannot retaliate. Sprites are powerful in large numbers."
-        },
-        {
-            "id": "022",
-            "name": "dwarf",
-            "image": "images/sorceress/dwarf.webp",
-            "faction": "sorceress",
-            "tier": "2",
-            "upgraded": "no",
-            "size": "small",
-            "attack type": "melee",
-            "movement": "ground",
-            "dwelling": "cottage",
-            "cost per unit": "200",
-            "stats": [
-                {
-                    "attack": "6",
-                    "defense": "5",
-                    "hit points": "20",
-                    "damage": "2-4",
-                    "speed": "very slow",
-                    "growth": "6"
-                }
-            ],
-            "info": "25% Magic resistance. Dwarves make excellent garrison units because of their toughness and magic resistance."
-        },
-        {
-            "id": "023",
-            "name": "battle dwarf",
-            "image": "images/sorceress/battle_dwarf.webp",
-            "faction": "sorceress",
-            "tier": "2+",
-            "upgraded": "yes",
-            "size": "small",
-            "attack type": "melee",
-            "movement": "ground",
-            "dwelling": "upg. cottage",
-            "cost per unit": "250",
-            "stats": [
-                {
-                    "attack": "6",
-                    "defense": "6",
-                    "hit points": "20",
-                    "damage": "2-4",
-                    "speed": "average",
-                    "growth": "6"
-                }
-            ],
-            "info": "25% Magic resistance. The upgrade of the Dwarf is faster and tougher."
-        },
-        {
-            "id": "024",
-            "name": "elf",
-            "image": "images/sorceress/elf.webp",
-            "faction": "sorceress",
-            "tier": "3",
-            "upgraded": "no",
-            "size": "small",
-            "attack type": "ranged",
-            "movement": "ground",
-            "dwelling": "archery range",
-            "cost per unit": "250",
-            "stats": [
-                {
-                    "attack": "4",
-                    "defense": "3",
-                    "hit points": "15",
-                    "damage": "2-3",
-                    "speed": "average",
-                    "growth": "4"
-                }
-            ],
-            "info": "Fires 2 shots per turn. Elves are incredible offensive units, able to deal large amounts of damage at range."
-        },
-        {
-            "id": "025",
-            "name": "grand elf",
-            "image": "images/sorceress/grand_elf.webp",
-            "faction": "sorceress",
-            "tier": "3+",
-            "upgraded": "yes",
-            "size": "small",
-            "attack type": "ranged",
-            "movement": "ground",
-            "dwelling": "upg. archery range",
-            "cost per unit": "300",
-            "stats": [
-                {
-                    "attack": "5",
-                    "defense": "5",
-                    "hit points": "15",
-                    "damage": "2-3",
-                    "speed": "very fast",
-                    "growth": "4"
-                }
-            ],
-            "info": "Fires 2 shots per turn. The Elf upgrade becomes faster and more skilled. Grand Elves are able to whittle down enemy forces quickly."
-        },
-        {
-            "id": "026",
-            "name": "druid",
-            "image": "images/sorceress/druid.webp",
-            "faction": "sorceress",
-            "tier": "4",
-            "upgraded": "no",
-            "size": "small",
-            "attack type": "ranged",
-            "movement": "ground",
-            "dwelling": "stonehenge",
-            "cost per unit": "350",
-            "stats": [
-                {
-                    "attack": "7",
-                    "defense": "5",
-                    "hit points": "25",
-                    "damage": "5-8",
-                    "speed": "fast",
-                    "growth": "3"
-                }
-            ],
-            "info": "Druids are one of the best range strike units available. Though weak, few units can close to melee range on the Druid without dying."
-        },
-        {
-            "id": "027",
-            "name": "greater druid",
-            "image": "images/sorceress/greater_druid.webp",
-            "faction": "sorceress",
-            "tier": "4+",
-            "upgraded": "yes",
-            "size": "small",
-            "attack type": "ranged",
-            "movement": "ground",
-            "dwelling": "upg. stonehenge",
-            "cost per unit": "400",
-            "stats": [
-                {
-                    "attack": "7",
-                    "defense": "7",
-                    "hit points": "25",
-                    "damage": "5-8",
-                    "speed": "very fast",
-                    "growth": "3"
-                }
-            ],
-            "info": "The Druid upgrade is faster and tougher. Greater Druids and Grand Elves complement each other well."
-        },
-        {
-            "id": "028",
-            "name": "unicorn",
-            "image": "images/sorceress/unicorn.webp",
-            "faction": "sorceress",
-            "tier": "5",
-            "upgraded": "no",
-            "size": "large",
-            "attack type": "melee",
-            "movement": "ground",
-            "dwelling": "fenced meadow",
-            "cost per unit": "500",
-            "stats": [
-                {
-                    "attack": "10",
-                    "defense": "9",
-                    "hit points": "40",
-                    "damage": "7-14",
-                    "speed": "fast",
-                    "growth": "2"
-                }
-            ],
-            "info": "20% chance to Blind enemy creature. Unicorns are solid ground creatures. They are tough, fast, and deal good damage."
-        },
-        {
-            "id": "029",
-            "name": "phoenix",
-            "image": "images/sorceress/phoenix.webp",
-            "faction": "sorceress",
-            "tier": "6",
-            "upgraded": "no",
-            "size": "large",
-            "attack type": "melee",
-            "movement": "flying",
-            "dwelling": "red tower",
-            "cost per unit": ["1500", "1 Mercury"],
-            "stats": [
-                {
-                    "attack": "12",
-                    "defense": "10",
-                    "hit points": "100",
-                    "damage": "20-40",
-                    "speed": "ultra fast",
-                    "growth": "1"
-                }
-            ],
-            "info": "Flies. Attack affects two hexes. Immune to elemental spells. Extremely fast and powerful, Phoenixes can be formidable opponents."
-        }
-    ]
-}
+[
+    {
+        "id": "001",
+        "name": "peasant",
+        "image": "images/knight/peasant.webp",
+        "faction": "knight",
+        "tier": "1",
+        "upgraded": "no",
+        "size": "small",
+        "attack_type": "melee",
+        "movement": "ground",
+        "dwelling": "thatched hut",
+        "cost_per_unit": "20",
+        "stats": [
+            {
+                "attack": "1",
+                "defense": "1",
+                "hit_points": "1",
+                "damage": "1-1",
+                "speed": "very slow",
+                "growth": "12"
+            }
+        ],
+        "info": "The weakest creature, their only redeeming quality is numbers- they are cheap and plentiful."
+    },
+    {
+        "id": "002",
+        "name": "archer",
+        "image": "images/knight/archer.webp",
+        "faction": "knight",
+        "tier": "2",
+        "upgraded": "no",
+        "size": "small",
+        "attack_type": "ranged",
+        "movement": "ground",
+        "dwelling": "archery range",
+        "cost_per_unit": "150",
+        "stats": [
+            {
+                "attack": "5",
+                "defense": "3",
+                "hit_points": "10",
+                "damage": "2-3",
+                "speed": "very slow",
+                "growth": "8"
+            }
+        ],
+        "info": "The only range strike unit for the Knight, the slow speed of the Archers can be a setback."
+    },
+    {
+        "id": "003",
+        "name": "ranger",
+        "image": "images/knight/ranger.webp",
+        "faction": "knight",
+        "tier": "2+",
+        "upgraded": "yes",
+        "size": "small",
+        "attack_type": "ranged",
+        "movement": "ground",
+        "dwelling": "upg. archery range",
+        "cost_per_unit": "200",
+        "stats": [
+            {
+                "attack": "5",
+                "defense": "3",
+                "hit_points": "10",
+                "damage": "2-3",
+                "speed": "average",
+                "growth": "8"
+            }
+        ],
+        "info": "Fires 2 shots per turn. The Ranger is almost twice as good as an Archer on offense."
+    },
+    {
+        "id": "004",
+        "name": "pikeman",
+        "image": "images/knight/pikeman.webp",
+        "faction": "knight",
+        "tier": "3",
+        "upgraded": "no",
+        "size": "small",
+        "attack_type": "melee",
+        "movement": "ground",
+        "dwelling": "blacksmith",
+        "cost_per_unit": "200",
+        "stats": [
+            {
+                "attack": "5",
+                "defense": "9",
+                "hit_points": "15",
+                "damage": "3-4",
+                "speed": "average",
+                "growth": "5"
+            }
+        ],
+        "info": "Though weak on offense, the Pikemen's Defense allows them to last in battle."
+    },
+    {
+        "id": "005",
+        "name": "veteran pikeman",
+        "image": "images/knight/veteran_pikeman.webp",
+        "faction": "knight",
+        "tier": "3+",
+        "upgraded": "yes",
+        "size": "small",
+        "attack_type": "melee",
+        "movement": "ground",
+        "dwelling": "upg. blacksmith",
+        "cost_per_unit": "250",
+        "stats": [
+            {
+                "attack": "5",
+                "defense": "9",
+                "hit_points": "20",
+                "damage": "3-4",
+                "speed": "fast",
+                "growth": "5"
+            }
+        ],
+        "info": "The upgrade of the Pikeman gives increased speed and hit points."
+    },
+    {
+        "id": "006",
+        "name": "swordsman",
+        "image": "images/knight/swordsman.webp",
+        "faction": "knight",
+        "tier": "4",
+        "upgraded": "no",
+        "size": "small",
+        "attack_type": "melee",
+        "movement": "ground",
+        "dwelling": "armory",
+        "cost_per_unit": "250",
+        "stats": [
+            {
+                "attack": "7",
+                "defense": "9",
+                "hit_points": "25",
+                "damage": "4-6",
+                "speed": "average",
+                "growth": "4"
+            }
+        ],
+        "info": "Swordsmen are tougher than Pikemen, and do considerably more damage."
+    },
+    {
+        "id": "007",
+        "name": "master swordsman",
+        "image": "images/knight/master_swordsman.webp",
+        "faction": "knight",
+        "tier": "4+",
+        "upgraded": "yes",
+        "size": "small",
+        "attack_type": "melee",
+        "movement": "ground",
+        "dwelling": "upg. armory",
+        "cost_per_unit": "300",
+        "stats": [
+            {
+                "attack": "7",
+                "defense": "9",
+                "hit_points": "30",
+                "damage": "4-6",
+                "speed": "fast",
+                "growth": "4"
+            }
+        ],
+        "info": "The Swordsman upgrade gives increased speed and hit points."
+    },
+    {
+        "id": "008",
+        "name": "cavalry",
+        "image": "images/knight/cavalry.webp",
+        "faction": "knight",
+        "tier": "5",
+        "upgraded": "no",
+        "size": "large",
+        "attack_type": "melee",
+        "movement": "ground",
+        "dwelling": "jousting arena",
+        "cost_per_unit": "300",
+        "stats": [
+            {
+                "attack": "10",
+                "defense": "9",
+                "hit_points": "30",
+                "damage": "5-10",
+                "speed": "very fast",
+                "growth": "3"
+            }
+        ],
+        "info": "Cavalry deal considerable damage, and their high speed allows them to manuever easily."
+    },
+    {
+        "id": "009",
+        "name": "champion",
+        "image": "images/knight/champion.webp",
+        "faction": "knight",
+        "tier": "5+",
+        "upgraded": "yes",
+        "size": "large",
+        "attack_type": "melee",
+        "movement": "ground",
+        "dwelling": "upg. jousting arena",
+        "cost_per_unit": "375",
+        "stats": [
+            {
+                "attack": "10",
+                "defense": "9",
+                "hit_points": "40",
+                "damage": "5-10",
+                "speed": "ultra fast",
+                "growth": "3"
+            }
+        ],
+        "info": "One of the fastest units, the Cavalry upgrade can move around almost at will on the battlefield."
+    },
+    {
+        "id": "010",
+        "name": "paladin",
+        "image": "images/knight/paladin.webp",
+        "faction": "knight",
+        "tier": "6",
+        "upgraded": "no",
+        "size": "small",
+        "attack_type": "melee",
+        "movement": "ground",
+        "dwelling": "cathedral",
+        "cost_per_unit": "600",
+        "stats": [
+            {
+                "attack": "11",
+                "defense": "12",
+                "hit_points": "50",
+                "damage": "10-20",
+                "speed": "fast",
+                "growth": "2"
+            }
+        ],
+        "info": "2 attacks. Paladins are best suited on offense, where they can best use their ability to strike twice."
+    },
+    {
+        "id": "011",
+        "name": "crusader",
+        "image": "images/knight/crusader.webp",
+        "faction": "knight",
+        "tier": "6+",
+        "upgraded": "yes",
+        "size": "small",
+        "attack_type": "melee",
+        "movement": "ground",
+        "dwelling": "upg. cathedral",
+        "cost_per_unit": "1000",
+        "stats": [
+            {
+                "attack": "11",
+                "defense": "12",
+                "hit_points": "65",
+                "damage": "10-20",
+                "speed": "very fast",
+                "growth": "2"
+            }
+        ],
+        "info": "2 attacks. Immune to curse. x2 damage vs. undead."
+    },
+    {
+        "id": "012",
+        "name": "goblin",
+        "image": "images/barbarian/goblin.webp",
+        "faction": "barbarian",
+        "tier": "1",
+        "upgraded": "no",
+        "size": "small",
+        "attack_type": "melee",
+        "movement": "ground",
+        "dwelling": "hut",
+        "cost_per_unit": "40",
+        "stats": [
+            {
+                "attack": "3",
+                "defense": "1",
+                "hit_points": "3",
+                "damage": "1-2",
+                "speed": "average",
+                "growth": "10"
+            }
+        ],
+        "info": "A solid low level creature, packs of Goblins are a match for most level two creatures."
+    },
+    {
+        "id": "013",
+        "name": "orc",
+        "image": "images/barbarian/orc.webp",
+        "faction": "barbarian",
+        "tier": "2",
+        "upgraded": "no",
+        "size": "small",
+        "attack_type": "ranged",
+        "movement": "ground",
+        "dwelling": "stick hut",
+        "cost_per_unit": "140",
+        "stats": [
+            {
+                "attack": "3",
+                "defense": "4",
+                "hit_points": "10",
+                "damage": "2-3",
+                "speed": "very slow",
+                "growth": "8"
+            }
+        ],
+        "info": "Though slow, Orcs provide range attack until Trolls can be recruited."
+    },
+    {
+        "id": "014",
+        "name": "orc chief",
+        "image": "images/barbarian/orc_chieftain.webp",
+        "faction": "barbarian",
+        "tier": "2+",
+        "upgraded": "yes",
+        "size": "small",
+        "attack_type": "ranged",
+        "movement": "ground",
+        "dwelling": "upg. stick hut",
+        "cost_per_unit": "175",
+        "stats": [
+            {
+                "attack": "3",
+                "defense": "4",
+                "hit_points": "15",
+                "damage": "3-4",
+                "speed": "slow",
+                "growth": "8"
+            }
+        ],
+        "info": "The upgrade to the Orcs gives them longer durabilty in combat."
+    },
+    {
+        "id": "015",
+        "name": "wolf",
+        "image": "images/barbarian/wolf.webp",
+        "faction": "barbarian",
+        "tier": "3",
+        "upgraded": "no",
+        "size": "large",
+        "attack_type": "melee",
+        "movement": "ground",
+        "dwelling": "den",
+        "cost_per_unit": "200",
+        "stats": [
+            {
+                "attack": "6",
+                "defense": "2",
+                "hit_points": "20",
+                "damage": "3-5",
+                "speed": "very fast",
+                "growth": "5"
+            }
+        ],
+        "info": "2 Attacks. Wolves are incredible offensive units, but they need to be used carefully because they cannot take damage well."
+    },
+    {
+        "id": "016",
+        "name": "ogre",
+        "image": "images/barbarian/ogre.webp",
+        "faction": "barbarian",
+        "tier": "4",
+        "upgraded": "no",
+        "size": "small",
+        "attack_type": "melee",
+        "movement": "ground",
+        "dwelling": "adobe",
+        "cost_per_unit": "300",
+        "stats": [
+            {
+                "attack": "9",
+                "defense": "5",
+                "hit_points": "40",
+                "damage": "4-6",
+                "speed": "very slow",
+                "growth": "4"
+            }
+        ],
+        "info": "Ogres are the anchor of the Barbarian units. Though tough, Ogres are very slow on the battlefield, making it difficult for them to attack."
+    },
+    {
+        "id": "017",
+        "name": "ogre lord",
+        "image": "images/barbarian/ogre_lord.webp",
+        "faction": "barbarian",
+        "tier": "4+",
+        "upgraded": "yes",
+        "size": "small",
+        "attack_type": "melee",
+        "movement": "ground",
+        "dwelling": "upg. adobe",
+        "cost_per_unit": "500",
+        "stats": [
+            {
+                "attack": "9",
+                "defense": "5",
+                "hit_points": "60",
+                "damage": "5-7",
+                "speed": "average",
+                "growth": "4"
+            }
+        ],
+        "info": "The upgrade to the Ogre not only adds speed, but a sizeable increase in hit points."
+    },
+    {
+        "id": "018",
+        "name": "troll",
+        "image": "images/barbarian/troll.webp",
+        "faction": "barbarian",
+        "tier": "5",
+        "upgraded": "no",
+        "size": "small",
+        "attack_type": "ranged",
+        "movement": "ground",
+        "dwelling": "bridge",
+        "cost_per_unit": "600",
+        "stats": [
+            {
+                "attack": "10",
+                "defense": "5",
+                "hit_points": "40",
+                "damage": "5-7",
+                "speed": "average",
+                "growth": "3"
+            }
+        ],
+        "info": "Regenerates. The ability to regenerate and strike at range makes trolls incredibly useful in castle sieges."
+    },
+    {
+        "id": "019",
+        "name": "war troll",
+        "image": "images/barbarian/war_troll.webp",
+        "faction": "barbarian",
+        "tier": "5+",
+        "upgraded": "yes",
+        "size": "small",
+        "attack_type": "ranged",
+        "movement": "ground",
+        "dwelling": "upg. bridge",
+        "cost_per_unit": "700",
+        "stats": [
+            {
+                "attack": "10",
+                "defense": "5",
+                "hit_points": "40",
+                "damage": "7-9",
+                "speed": "fast",
+                "growth": "3"
+            }
+        ],
+        "info": "Regenerates. The Troll upgrade increases in damage and speed, while keeping the ability to regenerate."
+    },
+    {
+        "id": "020",
+        "name": "cyclops",
+        "image": "images/barbarian/cyclops.webp",
+        "faction": "barbarian",
+        "tier": "6",
+        "upgraded": "no",
+        "size": "small",
+        "attack_type": "melee",
+        "movement": "ground",
+        "dwelling": "pyramid",
+        "cost_per_unit": ["750", " 1 Crystal"],
+        "stats": [
+            {
+                "attack": "12",
+                "defense": "9",
+                "hit_points": "80",
+                "damage": "12-24",
+                "speed": "fast",
+                "growth": "2"
+            }
+        ],
+        "info": "Attack affects 2 spaces, 20% chance to Paralyze creatures. Cyclopes are powerful ground combatants."
+    },
+    {
+        "id": "021",
+        "name": "sprite",
+        "image": "images/sorceress/sprite.webp",
+        "faction": "sorceress",
+        "tier": "1",
+        "upgraded": "no",
+        "size": "small",
+        "attack_type": "melee",
+        "movement": "flying",
+        "dwelling": "treehouse",
+        "cost_per_unit": "50",
+        "stats": [
+            {
+                "attack": "4",
+                "defense": "2",
+                "hit_points": "2",
+                "damage": "1-2",
+                "speed": "average",
+                "growth": "8"
+            }
+        ],
+        "info": "Flies. Creatures attacked by Sprites cannot retaliate. Sprites are powerful in large numbers."
+    },
+    {
+        "id": "022",
+        "name": "dwarf",
+        "image": "images/sorceress/dwarf.webp",
+        "faction": "sorceress",
+        "tier": "2",
+        "upgraded": "no",
+        "size": "small",
+        "attack_type": "melee",
+        "movement": "ground",
+        "dwelling": "cottage",
+        "cost_per_unit": "200",
+        "stats": [
+            {
+                "attack": "6",
+                "defense": "5",
+                "hit_points": "20",
+                "damage": "2-4",
+                "speed": "very slow",
+                "growth": "6"
+            }
+        ],
+        "info": "25% Magic resistance. Dwarves make excellent garrison units because of their toughness and magic resistance."
+    },
+    {
+        "id": "023",
+        "name": "battle dwarf",
+        "image": "images/sorceress/battle_dwarf.webp",
+        "faction": "sorceress",
+        "tier": "2+",
+        "upgraded": "yes",
+        "size": "small",
+        "attack_type": "melee",
+        "movement": "ground",
+        "dwelling": "upg. cottage",
+        "cost_per_unit": "250",
+        "stats": [
+            {
+                "attack": "6",
+                "defense": "6",
+                "hit_points": "20",
+                "damage": "2-4",
+                "speed": "average",
+                "growth": "6"
+            }
+        ],
+        "info": "25% Magic resistance. The upgrade of the Dwarf is faster and tougher."
+    },
+    {
+        "id": "024",
+        "name": "elf",
+        "image": "images/sorceress/elf.webp",
+        "faction": "sorceress",
+        "tier": "3",
+        "upgraded": "no",
+        "size": "small",
+        "attack_type": "ranged",
+        "movement": "ground",
+        "dwelling": "archery range",
+        "cost_per_unit": "250",
+        "stats": [
+            {
+                "attack": "4",
+                "defense": "3",
+                "hit_points": "15",
+                "damage": "2-3",
+                "speed": "average",
+                "growth": "4"
+            }
+        ],
+        "info": "Fires 2 shots per turn. Elves are incredible offensive units, able to deal large amounts of damage at range."
+    },
+    {
+        "id": "025",
+        "name": "grand elf",
+        "image": "images/sorceress/grand_elf.webp",
+        "faction": "sorceress",
+        "tier": "3+",
+        "upgraded": "yes",
+        "size": "small",
+        "attack_type": "ranged",
+        "movement": "ground",
+        "dwelling": "upg. archery range",
+        "cost_per_unit": "300",
+        "stats": [
+            {
+                "attack": "5",
+                "defense": "5",
+                "hit_points": "15",
+                "damage": "2-3",
+                "speed": "very fast",
+                "growth": "4"
+            }
+        ],
+        "info": "Fires 2 shots per turn. The Elf upgrade becomes faster and more skilled. Grand Elves are able to whittle down enemy forces quickly."
+    },
+    {
+        "id": "026",
+        "name": "druid",
+        "image": "images/sorceress/druid.webp",
+        "faction": "sorceress",
+        "tier": "4",
+        "upgraded": "no",
+        "size": "small",
+        "attack_type": "ranged",
+        "movement": "ground",
+        "dwelling": "stonehenge",
+        "cost_per_unit": "350",
+        "stats": [
+            {
+                "attack": "7",
+                "defense": "5",
+                "hit_points": "25",
+                "damage": "5-8",
+                "speed": "fast",
+                "growth": "3"
+            }
+        ],
+        "info": "Druids are one of the best range strike units available. Though weak, few units can close to melee range on the Druid without dying."
+    },
+    {
+        "id": "027",
+        "name": "greater druid",
+        "image": "images/sorceress/greater_druid.webp",
+        "faction": "sorceress",
+        "tier": "4+",
+        "upgraded": "yes",
+        "size": "small",
+        "attack_type": "ranged",
+        "movement": "ground",
+        "dwelling": "upg. stonehenge",
+        "cost_per_unit": "400",
+        "stats": [
+            {
+                "attack": "7",
+                "defense": "7",
+                "hit_points": "25",
+                "damage": "5-8",
+                "speed": "very fast",
+                "growth": "3"
+            }
+        ],
+        "info": "The Druid upgrade is faster and tougher. Greater Druids and Grand Elves complement each other well."
+    },
+    {
+        "id": "028",
+        "name": "unicorn",
+        "image": "images/sorceress/unicorn.webp",
+        "faction": "sorceress",
+        "tier": "5",
+        "upgraded": "no",
+        "size": "large",
+        "attack_type": "melee",
+        "movement": "ground",
+        "dwelling": "fenced meadow",
+        "cost_per_unit": "500",
+        "stats": [
+            {
+                "attack": "10",
+                "defense": "9",
+                "hit_points": "40",
+                "damage": "7-14",
+                "speed": "fast",
+                "growth": "2"
+            }
+        ],
+        "info": "20% chance to Blind enemy creature. Unicorns are solid ground creatures. They are tough, fast, and deal good damage."
+    },
+    {
+        "id": "029",
+        "name": "phoenix",
+        "image": "images/sorceress/phoenix.webp",
+        "faction": "sorceress",
+        "tier": "6",
+        "upgraded": "no",
+        "size": "large",
+        "attack_type": "melee",
+        "movement": "flying",
+        "dwelling": "red tower",
+        "cost_per_unit": ["1500", " 1 Mercury"],
+        "stats": [
+            {
+                "attack": "12",
+                "defense": "10",
+                "hit_points": "100",
+                "damage": "20-40",
+                "speed": "ultra fast",
+                "growth": "1"
+            }
+        ],
+        "info": "Flies. Attack affects two hexes. Immune to elemental spells. Extremely fast and powerful, Phoenixes can be formidable opponents."
+    },
+    {
+        "id": "030",
+        "name": "halfling",
+        "image": "images/wizard/halfling.webp",
+        "faction": "wizard",
+        "tier": "1",
+        "upgraded": "no",
+        "size": "small",
+        "attack_type": "ranged",
+        "movement": "ground",
+        "dwelling": "habitat",
+        "cost_per_unit": "50",
+        "stats": [
+            {
+                "attack": "2",
+                "defense": "1",
+                "hit_points": "3",
+                "damage": "1-3",
+                "speed": "slow",
+                "growth": "8"
+            }
+        ],
+        "info": "Halflings provide solid, early range strike ability for the Wizard."
+    },
+    {
+        "id": "031",
+        "name": "boar",
+        "image": "images/wizard/boar.webp",
+        "faction": "wizard",
+        "tier": "2",
+        "upgraded": "no",
+        "size": "large",
+        "attack_type": "melee",
+        "movement": "ground",
+        "dwelling": "boar pen",
+        "cost_per_unit": "150",
+        "stats": [
+            {
+                "attack": "5",
+                "defense": "4",
+                "hit_points": "15",
+                "damage": "2-3",
+                "speed": "very fast",
+                "growth": "6"
+            }
+        ],
+        "info": "Boars are fast and strong and make excellent units for exploring."
+    },
+    {
+        "id": "032",
+        "name": "iron golem",
+        "image": "images/wizard/iron_golem.webp",
+        "faction": "wizard",
+        "tier": "3",
+        "upgraded": "no",
+        "size": "small",
+        "attack_type": "melee",
+        "movement": "ground",
+        "dwelling": "foundry",
+        "cost_per_unit": "300",
+        "stats": [
+            {
+                "attack": "5",
+                "defense": "10",
+                "hit_points": "30",
+                "damage": "4-5",
+                "speed": "very slow",
+                "growth": "4"
+            }
+        ],
+        "info": "1/2 damage from elemental spells. The high defense, partial magic resistance, and slow speed make Golems excellent garrison creatures."
+    },
+    {
+        "id": "033",
+        "name": "steel golem",
+        "image": "images/wizard/steel_golem.webp",
+        "faction": "wizard",
+        "tier": "3+",
+        "upgraded": "yes",
+        "size": "small",
+        "attack_type": "melee",
+        "movement": "ground",
+        "dwelling": "upg. foundry",
+        "cost_per_unit": "350",
+        "stats": [
+            {
+                "attack": "7",
+                "defense": "10",
+                "hit_points": "35",
+                "damage": "4-5",
+                "speed": "slow",
+                "growth": "4"
+            }
+        ],
+        "info": "1/2 damage from elemental spells. The Golem upgrade is faster, tougher, and stronger."
+    },
+    {
+        "id": "034",
+        "name": "roc",
+        "image": "images/wizard/roc.webp",
+        "faction": "wizard",
+        "tier": "",
+        "upgraded": "no",
+        "size": "small",
+        "attack_type": "melee",
+        "movement": "ground",
+        "dwelling": "cliff nest",
+        "cost_per_unit": "400",
+        "stats": [
+            {
+                "attack": "7",
+                "defense": "7",
+                "hit_points": "40",
+                "damage": "4-8",
+                "speed": "average",
+                "growth": "3"
+            }
+        ],
+        "info": "Flies. The only flying creature available to the Wizard, Roc offers solid offense and defense."
+    },
+    {
+        "id": "035",
+        "name": "mage",
+        "image": "images/wizard/mage.webp",
+        "faction": "wizard",
+        "tier": "5",
+        "upgraded": "no",
+        "size": "small",
+        "attack_type": "ranged",
+        "movement": "ground",
+        "dwelling": "ivory tower",
+        "cost_per_unit": "600",
+        "stats": [
+            {
+                "attack": "11",
+                "defense": "7",
+                "hit_points": "30",
+                "damage": "7-9",
+                "speed": "fast",
+                "growth": "2"
+            }
+        ],
+        "info": "No penalty for attacking adjacent units. Though weak, Mages provide incredible offensive power."
+    },
+    {
+        "id": "036",
+        "name": "archmage",
+        "image": "images/wizard/archmage.webp",
+        "faction": "wizard",
+        "tier": "5+",
+        "upgraded": "yes",
+        "size": "small",
+        "attack_type": "ranged",
+        "movement": "ground",
+        "dwelling": "upg. ivory tower",
+        "cost_per_unit": "700",
+        "stats": [
+            {
+                "attack": "12",
+                "defense": "8",
+                "hit_points": "35",
+                "damage": "7-9",
+                "speed": "very fast",
+                "growth": "2"
+            }
+        ],
+        "info": "No adjacent penalty. 20% chance to dispel beneficial spells on their target. Archmages are second only to Titans in range strike ability."
+    },
+    {
+        "id": "037",
+        "name": "giant",
+        "image": "images/wizard/giant.webp",
+        "faction": "wizard",
+        "tier": "6",
+        "upgraded": "no",
+        "size": "small",
+        "attack_type": "melee",
+        "movement": "ground",
+        "dwelling": "cloud castle",
+        "cost_per_unit": ["2000", " 1 Gem"],
+        "stats": [
+            {
+                "attack": "13",
+                "defense": "10",
+                "hit_points": "150",
+                "damage": "20-30",
+                "speed": "average",
+                "growth": "1"
+            }
+        ],
+        "info": "Immune to mind-affecting spells. Giants do good damage and have enormous hit points, making them the scariest creature on the ground."
+    },
+    {
+        "id": "038",
+        "name": "titan",
+        "image": "images/wizard/titan.webp",
+        "faction": "wizard",
+        "tier": "6+",
+        "upgraded": "yes",
+        "size": "small",
+        "attack_type": "ranged",
+        "movement": "ground",
+        "dwelling": "upg. cloud castle",
+        "cost_per_unit": ["5000", " 2 Gem"],
+        "stats": [
+            {
+                "attack": "15",
+                "defense": "15",
+                "hit_points": "300",
+                "damage": "20-30",
+                "speed": "very fast",
+                "growth": "1"
+            }
+        ],
+        "info": "Immune to mind-affecting spells. No penalty for attacking adjacent units. Titans are capable of defeating Dragons in one on one combat."
+    },
+    {
+        "id": "039",
+        "name": "centaur",
+        "image": "images/warlock/centaur.webp",
+        "faction": "warlock",
+        "tier": "1",
+        "upgraded": "no",
+        "size": "large",
+        "attack_type": "ranged",
+        "movement": "ground",
+        "dwelling": "cave",
+        "cost_per_unit": "60",
+        "stats": [
+            {
+                "attack": "3",
+                "defense": "1",
+                "hit_points": "5",
+                "damage": "1-2",
+                "speed": "average",
+                "growth": "8"
+            }
+        ],
+        "info": "Centaurs are the only range strike creature available to the Warlock and are valuable for that reason."
+    },
+    {
+        "id": "040",
+        "name": "gargoyle",
+        "image": "images/warlock/gargoyle.webp",
+        "faction": "warlock",
+        "tier": "2",
+        "upgraded": "no",
+        "size": "small",
+        "attack_type": "melee",
+        "movement": "fyling",
+        "dwelling": "crypt",
+        "cost_per_unit": "200",
+        "stats": [
+            {
+                "attack": "4",
+                "defense": "7",
+                "hit_points": "15",
+                "damage": "2-3",
+                "speed": "very fast",
+                "growth": "6"
+            }
+        ],
+        "info": "Flies. Due to their speed and toughness, Gargoyles are one of the most useful Warlock creatures."
+    },
+    {
+        "id": "041",
+        "name": "griffin",
+        "image": "images/warlock/griffin.webp",
+        "faction": "warlock",
+        "tier": "3",
+        "upgraded": "no",
+        "size": "large",
+        "attack_type": "melee",
+        "movement": "flying",
+        "dwelling": "nest",
+        "cost_per_unit": "300",
+        "stats": [
+            {
+                "attack": "6",
+                "defense": "6",
+                "hit_points": "25",
+                "damage": "3-5",
+                "speed": "average",
+                "growth": "4"
+            }
+        ],
+        "info": "Flies. May retaliate against any number of attackers. Griffins are able to fight large numbers of creatures and prove victorious."
+    },
+    {
+        "id": "042",
+        "name": "minotaur",
+        "image": "images/warlock/minotaur.webp",
+        "faction": "warlock",
+        "tier": "4",
+        "upgraded": "no",
+        "size": "small",
+        "attack_type": "melee",
+        "movement": "ground",
+        "dwelling": "maze",
+        "cost_per_unit": "400",
+        "stats": [
+            {
+                "attack": "9",
+                "defense": "8",
+                "hit_points": "35",
+                "damage": "5-10",
+                "speed": "average",
+                "growth": "3"
+            }
+        ],
+        "info": "Minotaurs are good offensive creatures but are slow compared to the earlier Warlock creatures."
+    },
+    {
+        "id": "043",
+        "name": "minotaur king",
+        "image": "images/warlock/minotaur_king.webp",
+        "faction": "warlock",
+        "tier": "4+",
+        "upgraded": "yes",
+        "size": "small",
+        "attack_type": "melee",
+        "movement": "ground",
+        "dwelling": "upg. maze",
+        "cost_per_unit": "500",
+        "stats": [
+            {
+                "attack": "9",
+                "defense": "8",
+                "hit_points": "45",
+                "damage": "5-10",
+                "speed": "very fast",
+                "growth": "3"
+            }
+        ],
+        "info": "The Minotaur upgrade saves the Warlock in the midgame because of the increased speed and toughness."
+    },
+    {
+        "id": "044",
+        "name": "hydra",
+        "image": "images/warlock/hydra.webp",
+        "faction": "warlock",
+        "tier": "5",
+        "upgraded": "no",
+        "size": "large",
+        "attack_type": "melee",
+        "movement": "ground",
+        "dwelling": "swamp",
+        "cost_per_unit": "800",
+        "stats": [
+            {
+                "attack": "8",
+                "defense": "9",
+                "hit_points": "75",
+                "damage": "6-12",
+                "speed": "very slow",
+                "growth": "2"
+            }
+        ],
+        "info": "Attacks all adjacent enemies. Though powerful, their slow speed makes the Hydra most useful as a garrison creature."
+    },
+    {
+        "id": "045",
+        "name": "green dragon",
+        "image": "images/warlock/green_dragon.webp",
+        "faction": "warlock",
+        "tier": "6",
+        "upgraded": "no",
+        "size": "large",
+        "attack_type": "melee",
+        "movement": "flying",
+        "dwelling": "green tower",
+        "cost_per_unit": ["3000", " 1 Sulfur"],
+        "stats": [
+            {
+                "attack": "12",
+                "defense": "12",
+                "hit_points": "200",
+                "damage": "25-50",
+                "speed": "average",
+                "growth": "1"
+            }
+        ],
+        "info": "Flies. Attack affects two hexes. Immune to spells. The Dragon easily reigns as the best sixth level creature and can fight small armies itself."
+    },
+    {
+        "id": "046",
+        "name": "red dragon",
+        "image": "images/warlock/red_dragon.webp",
+        "faction": "warlock",
+        "tier": "6+",
+        "upgraded": "yes",
+        "size": "large",
+        "attack_type": "melee",
+        "movement": "flying",
+        "dwelling": "red tower",
+        "cost_per_unit": ["3500", " 1 Sulfur"],
+        "stats": [
+            {
+                "attack": "13",
+                "defense": "13",
+                "hit_points": "250",
+                "damage": "25-50",
+                "speed": "fast",
+                "growth": "1"
+            }
+        ],
+        "info": "Flies. Attack affects two hexes. Immune to spells. The first upgrade to the Dragon improves speed, toughness, and skill."
+    },
+    {
+        "id": "047",
+        "name": "black dragon",
+        "image": "images/warlock/black_dragon.webp",
+        "faction": "warlock",
+        "tier": "6++",
+        "upgraded": "yes",
+        "size": "large",
+        "attack_type": "melee",
+        "movement": "flying",
+        "dwelling": "black tower",
+        "cost_per_unit": ["4000", " 2 Sulfur"],
+        "stats": [
+            {
+                "attack": "14",
+                "defense": "14",
+                "hit_points": "300",
+                "damage": "25-50",
+                "speed": "very fast",
+                "growth": "1"
+            }
+        ],
+        "info": "Flies. Attack affects two hexes. Immune to spells. The second upgrade to the Dragon improves again in speed, toughness, and skill."
+    },
+    {
+        "id": "048",
+        "name": "skeleton",
+        "image": "images/necromancer/skeleton.webp",
+        "faction": "necromancer",
+        "tier": "1",
+        "upgraded": "no",
+        "size": "small",
+        "attack_type": "melee",
+        "movement": "ground",
+        "dwelling": "excavation",
+        "cost_per_unit": "75",
+        "stats": [
+            {
+                "attack": "4",
+                "defense": "3",
+                "hit_points": "4",
+                "damage": "2-3",
+                "speed": "average",
+                "growth": "8"
+            }
+        ],
+        "info": "The best level one creature, Skeletons should be hoarded by Necromancers, as they provide easily available power early on."
+    },
+    {
+        "id": "049",
+        "name": "zombie",
+        "image": "images/necromancer/zombie.webp",
+        "faction": "necromancer",
+        "tier": "2",
+        "upgraded": "no",
+        "size": "small",
+        "attack_type": "melee",
+        "movement": "ground",
+        "dwelling": "graveyard",
+        "cost_per_unit": "150",
+        "stats": [
+            {
+                "attack": "5",
+                "defense": "2",
+                "hit_points": "15",
+                "damage": "2-3",
+                "speed": "very slow",
+                "growth": "6"
+            }
+        ],
+        "info": "Though having more hits than Skeletons, Zombies have a low Defense and speed."
+    },
+    {
+        "id": "050",
+        "name": "mutant zombie",
+        "image": "images/necromancer/mutant_zombie.webp",
+        "faction": "necromancer",
+        "tier": "2+",
+        "upgraded": "yes",
+        "size": "small",
+        "attack_type": "melee",
+        "movement": "ground",
+        "dwelling": "upg. graveyard",
+        "cost_per_unit": "200",
+        "stats": [
+            {
+                "attack": "5",
+                "defense": "2",
+                "hit_points": "20",
+                "damage": "2-3",
+                "speed": "average",
+                "growth": "6"
+            }
+        ],
+        "info": "The zombie upgrade increases the speed of the Zombies. Mutant Zombies are worthwhile additions to any fledgling undead army."
+    },
+    {
+        "id": "051",
+        "name": "mummy",
+        "image": "images/necromancer/mummy.webp",
+        "faction": "necromancer",
+        "tier": "3",
+        "upgraded": "no",
+        "size": "small",
+        "attack_type": "melee",
+        "movement": "ground",
+        "dwelling": "pyramid",
+        "cost_per_unit": "250",
+        "stats": [
+            {
+                "attack": "6",
+                "defense": "6",
+                "hit_points": "25",
+                "damage": "3-4",
+                "speed": "average",
+                "growth": "4"
+            }
+        ],
+        "info": "20% chance to curse enemy creatures. The best ground creature available for the Necromancer."
+    },
+    {
+        "id": "052",
+        "name": "royal mummy",
+        "image": "images/necromancer/royal_mummy.webp",
+        "faction": "necromancer",
+        "tier": "3+",
+        "upgraded": "yes",
+        "size": "small",
+        "attack_type": "melee",
+        "movement": "ground",
+        "dwelling": "upg. pyramid",
+        "cost_per_unit": "300",
+        "stats": [
+            {
+                "attack": "6",
+                "defense": "6",
+                "hit_points": "30",
+                "damage": "3-4",
+                "speed": "fast",
+                "growth": "4"
+            }
+        ],
+        "info": "30% chance to Curse enemy creatures. The upgrade of the Mummy has improved speed and toughness."
+    },
+    {
+        "id": "053",
+        "name": "vampire",
+        "image": "images/necromancer/vampire.webp",
+        "faction": "necromancer",
+        "tier": "4",
+        "upgraded": "no",
+        "size": "small",
+        "attack_type": "melee",
+        "movement": "flying",
+        "dwelling": "mansion",
+        "cost_per_unit": "500",
+        "stats": [
+            {
+                "attack": "8",
+                "defense": "6",
+                "hit_points": "30",
+                "damage": "5-7",
+                "speed": "average",
+                "growth": "3"
+            }
+        ],
+        "info": "Flies. Creatures attacked by Vampires cannot retaliate. Vampires are necessary for the success of the Necromancer."
+    },
+    {
+        "id": "054",
+        "name": "vampire lord",
+        "image": "images/necromancer/vampire_lord.webp",
+        "faction": "necromancer",
+        "tier": "4+",
+        "upgraded": "yes",
+        "size": "small",
+        "attack_type": "melee",
+        "movement": "flying",
+        "dwelling": "upg. mansion",
+        "cost_per_unit": "650",
+        "stats": [
+            {
+                "attack": "8",
+                "defense": "6",
+                "hit_points": "40",
+                "damage": "5-7",
+                "speed": "fast",
+                "growth": "3"
+            }
+        ],
+        "info": "Flies. Creatures attacked by Vampire Lords cannot retaliate. Vampire Lords gain some back some of the damage they do as hit points."
+    },
+    {
+        "id": "055",
+        "name": "lich",
+        "image": "images/necromancer/lich.webp",
+        "faction": "necromancer",
+        "tier": "5",
+        "upgraded": "no",
+        "size": "small",
+        "attack_type": "ranged",
+        "movement": "ground",
+        "dwelling": "mausoleum",
+        "cost_per_unit": "750",
+        "stats": [
+            {
+                "attack": "7",
+                "defense": "12",
+                "hit_points": "25",
+                "damage": "8-10",
+                "speed": "fast",
+                "growth": "2"
+            }
+        ],
+        "info": "Range attack affects adjacent hexes. Liches are the only range strike unit available to the Necromancer."
+    },
+    {
+        "id": "056",
+        "name": "power lich",
+        "image": "images/necromancer/power_lich.webp",
+        "faction": "necromancer",
+        "tier": "5+",
+        "upgraded": "yes",
+        "size": "small",
+        "attack_type": "ranged",
+        "movement": "ground",
+        "dwelling": "upg. mausoleum",
+        "cost_per_unit": "900",
+        "stats": [
+            {
+                "attack": "7",
+                "defense": "13",
+                "hit_points": "35",
+                "damage": "8-10",
+                "speed": "very fast",
+                "growth": "2"
+            }
+        ],
+        "info": "Range attack affects adjacent hexes. This upgrade of the Lich improves the durability of the Lich in combat."
+    },
+    {
+        "id": "057",
+        "name": "bone dragon",
+        "image": "images/necromancer/bone_dragon.webp",
+        "faction": "necromancer",
+        "tier": "6",
+        "upgraded": "no",
+        "size": "large",
+        "attack_type": "melee",
+        "movement": "flying",
+        "dwelling": "laboratory",
+        "cost_per_unit": "1500",
+        "stats": [
+            {
+                "attack": "11",
+                "defense": "9",
+                "hit_points": "150",
+                "damage": "25-45",
+                "speed": "average",
+                "growth": "1"
+            }
+        ],
+        "info": "Flies. Lowers the morale of opposing creatures. Bone Dragons are fierce creatures, second only to the Warlock Dragons in raw damage."
+    },
+    {
+        "id": "058",
+        "name": "rogue",
+        "image": "images/neutral/rogue.webp",
+        "faction": "neutral",
+        "tier": "N/A",
+        "upgraded": "no",
+        "size": "small",
+        "attack_type": "melee",
+        "movement": "ground",
+        "dwelling": "wagon camp",
+        "cost_per_unit": "50",
+        "stats": [
+            {
+                "attack": "6",
+                "defense": "1",
+                "hit_points": "4",
+                "damage": "1-2",
+                "speed": "fast",
+                "growth": "N/A"
+            }
+        ],
+        "info": "Creatures attacked by Rogues cannot retaliate. Rogues are useful early in the game, providing extra offense to any hero’s army."
+    },
+    {
+        "id": "059",
+        "name": "nomad",
+        "image": "images/neutral/nomad.png",
+        "faction": "neutral",
+        "tier": "N/A",
+        "upgraded": "no",
+        "size": "large",
+        "attack_type": "melee",
+        "movement": "ground",
+        "dwelling": "desert tent",
+        "cost_per_unit": "200",
+        "stats": [
+            {
+                "attack": "7",
+                "defense": "6",
+                "hit_points": "20",
+                "damage": "2-5",
+                "speed": "very fast",
+                "growth": "N/A"
+            }
+        ],
+        "info": "Nomads provide inexpensive fast creatures that can deal and take damage reasonably well."
+    },
+    {
+        "id": "060",
+        "name": "ghost",
+        "image": "images/neutral/ghost.png",
+        "faction": "neutral",
+        "tier": "N/A",
+        "upgraded": "no",
+        "size": "small",
+        "attack_type": "melee",
+        "movement": "flying",
+        "dwelling": "barrow mounds",
+        "cost_per_unit": "1000",
+        "stats": [
+            {
+                "attack": "8",
+                "defense": "7",
+                "hit_points": "20",
+                "damage": "4-6",
+                "speed": "fast",
+                "growth": "N/A"
+            }
+        ],
+        "info": "Flies. Undead. Creatures killed by ghosts become ghosts. Ghosts are fearsome opponents. Never attack ghosts with level one creatures!"
+    },
+    {
+        "id": "061",
+        "name": "genie",
+        "image": "images/neutral/genie.png",
+        "faction": "neutral",
+        "tier": "N/A",
+        "upgraded": "no",
+        "size": "small",
+        "attack_type": "melee",
+        "movement": "flying",
+        "dwelling": "ancient lamp",
+        "cost_per_unit": ["650", " 1 Gem"],
+        "stats": [
+            {
+                "attack": "10",
+                "defense": "9",
+                "hit_points": "50",
+                "damage": "20-30",
+                "speed": "very fast",
+                "growth": "N/A"
+            }
+        ],
+        "info": "Flies. 10% chance to halve enemy unit. Between Paladin and Phoenix in power, the Genies low cost and awesome special ability are always useful."
+    },
+    {
+        "id": "062",
+        "name": "medusa",
+        "image": "images/neutral/medusa.png",
+        "faction": "neutral",
+        "tier": "N/A",
+        "upgraded": "no",
+        "size": "large",
+        "attack_type": "melee",
+        "movement": "ground",
+        "dwelling": "ruins",
+        "cost_per_unit": "500",
+        "stats": [
+            {
+                "attack": "8",
+                "defense": "9",
+                "hit_points": "35",
+                "damage": "6-10",
+                "speed": "average",
+                "growth": "N/A"
+            }
+        ],
+        "info": "20% chance to turn victim to stone for the combat. Medusas make a welcome addition to any army or garrison force."
+    },
+    {
+        "id": "063",
+        "name": "air elemental",
+        "image": "images/neutral/air_elemental.png",
+        "faction": "neutral",
+        "tier": "N/A",
+        "upgraded": "no",
+        "size": "small",
+        "attack_type": "melee",
+        "movement": "ground",
+        "dwelling": "air altar",
+        "cost_per_unit": "500",
+        "stats": [
+            {
+                "attack": "7",
+                "defense": "7",
+                "hit_points": "35",
+                "damage": "2-8",
+                "speed": "very fast",
+                "growth": "N/A"
+            }
+        ],
+        "info": "Neutral morale. Immune to mind spells and Meteor Swarm. Storm and Lightning Bolt do x2 damage."
+    },
+    {
+        "id": "064",
+        "name": "earth elemental",
+        "image": "images/neutral/earth_elemental.png",
+        "faction": "neutral",
+        "tier": "N/A",
+        "upgraded": "no",
+        "size": "small",
+        "attack_type": "melee",
+        "movement": "ground",
+        "dwelling": "earth altar",
+        "cost_per_unit": "500",
+        "stats": [
+            {
+                "attack": "8",
+                "defense": "8",
+                "hit_points": "50",
+                "damage": "4-5",
+                "speed": "slow",
+                "growth": "N/A"
+            }
+        ],
+        "info": "Neutral morale. Immune to mind spells, Lightning Bolt, and Storm. Meteor Swarm does x2 damage."
+    },
+    {
+        "id": "065",
+        "name": "fire elemental",
+        "image": "images/neutral/fire_elemental.png",
+        "faction": "neutral",
+        "tier": "N/A",
+        "upgraded": "no",
+        "size": "small",
+        "attack_type": "melee",
+        "movement": "ground",
+        "dwelling": "fire altar",
+        "cost_per_unit": "500",
+        "stats": [
+            {
+                "attack": "8",
+                "defense": "6",
+                "hit_points": "40",
+                "damage": "4-6",
+                "speed": "fast",
+                "growth": "N/A"
+            }
+        ],
+        "info": "Neutral morale. Immune to mind and fire spells. Cold spells do x2 damage."
+    },
+    {
+        "id": "066",
+        "name": "water elemental",
+        "image": "images/neutral/water_elemental.png",
+        "faction": "neutral",
+        "tier": "N/A",
+        "upgraded": "no",
+        "size": "small",
+        "attack_type": "melee",
+        "movement": "ground",
+        "dwelling": "water altar",
+        "cost_per_unit": "500",
+        "stats": [
+            {
+                "attack": "6",
+                "defense": "8",
+                "hit_points": "45",
+                "damage": "3-7",
+                "speed": "average",
+                "growth": "N/A"
+            }
+        ],
+        "info": "Neutral morale. Immune to mind and cold spells. Fire spells do x2 damage."
+    }
+]
