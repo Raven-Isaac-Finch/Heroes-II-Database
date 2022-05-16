@@ -1,0 +1,50 @@
+[
+    {
+        "id": "001",
+        "name": "power ring",
+        "category": "adventure",
+        "effect": "+2 spell points return each turn",
+        "bgc": "purple",
+        "image": "artifact-images/adventure/power_ring.png"
+    },
+    {
+        "id": "002",
+        "name": "telescope",
+        "category": "adventure",
+        "effect": "viewing range +1",
+        "bgc": "blue",
+        "image": "artifact-images/adventure/telescope.png"
+    },
+    {
+        "id": "003",
+        "name": "nomad's boots of mobility",
+        "category": "adventure",
+        "effect": "increase hero's movement speed on land",
+        "bgc": "blue",
+        "image": "artifact-images/adventure/nomad_s_boots_of_mobility.png"
+    },
+    {
+        "id": "004",
+        "name": "traveller's boots of mobility",
+        "category": "adventure",
+        "effect": "increase hero's movement speed on land",
+        "bgc": "blue",
+        "image": "artifact-images/adventure/traveller_s_boots_of_mobility.png"
+    },
+    {
+        "id": "005",
+        "name": "sailor's astrolabe of mobility",
+        "category": "adventure",
+        "effect": "increase hero's movement speed on sea",
+        "bgc": "blue",
+        "image": "artifact-images/adventure/sailor_s_astrolabe_of_mobility"
+    },
+    {
+        "id": "006",
+        "name": "true compass of mobility",
+        "category": "adventure",
+        "effect": "increase hero's movement speed on land and sea",
+        "bgc": "blue",
+        "image": "artifact-images/adventure/true_compass_of_mobility"
+    }
+]
