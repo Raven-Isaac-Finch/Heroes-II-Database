@@ -69,15 +69,17 @@ body {
     width: 30%;
 }
 
-/*-------------------- Monster Cards Layout --------------------*/
-.monster-container {    
+/*-------------------- Monster & Artifact Cards Layout --------------------*/
+.monster-container,
+.artifact-container {    
     display: flex;
     width: 100%;
     flex-wrap: wrap;
     justify-content: center;
 }
 
-.monster-card {
+.monster-card,
+.artifact-card {
     width: 300px;
     display: flex;
     flex-direction: column;
@@ -87,6 +89,12 @@ body {
     background: linear-gradient(gray, lightgrey);
     text-transform: capitalize;
     display: none;
+    transition: 0.2s ease-in-out;
+}
+
+.monster-card:hover,
+.artifact-card:hover {
+    transform: scale(1.02, 1.02);
 }
 
 .img-container {
@@ -126,7 +134,8 @@ body {
 }
 
 /*-------------------- Monster Cards Style --------------------*/
-.monster-img {
+.monster-img,
+.artifact-img {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -134,7 +143,8 @@ body {
     text-align: center;
 }
 
-.monster-id {
+.monster-id,
+.artifact-id {
     color: white;
     font-style: italic;
     font-size: var(--fs-small);
@@ -156,7 +166,8 @@ body {
     font-weight: bold;
 }
 
-.monster-info {
+.monster-info,
+.artifact-effect {
     font-style: italic;
     font-size: var(--fs-normal);
     text-align: center;
@@ -175,7 +186,8 @@ body {
     width: 50%;
 }
 
-.monster-name {
+.monster-name,
+.artifact-name {
     font-size: var(--fs-normal-plus);
     margin: 1px 0;
 }

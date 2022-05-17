@@ -1,4 +1,5 @@
 import monsterData from './creatures.json' assert {type: 'json'};
+import artifactData from './artifacts.json' assert {type: 'json'};
 
 const colors = {
     knight: "#3636a3",
@@ -28,6 +29,7 @@ landingBtn.addEventListener('click', function() {
 
 window.addEventListener('DOMContentLoaded', function() {
     displayMonsterCards(monsterData);
+    displayArtifactCards(artifactData);
 });
 
 const monsterContainer = document.querySelector('.monster-container');
