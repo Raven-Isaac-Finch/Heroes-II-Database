@@ -11,11 +11,39 @@
     <title>Heroes II DataBase</title>
 </head>
 <body>
-    <h1 id="page-title"><span class="heroes">Heroes</span> of Might & Magic <span class="two">II</span></h1>
-    <form class="monster-search">
-        <input type="text" name="monster-input" id="monster-input">
-        <button class="btn-search" disabled><i class="fa-solid fa-magnifying-glass"></i></button>
-    </form>
+    <nav id="nav-container">
+        <h1 id="page-title"><span class="heroes">Heroes</span> of Might & Magic <span class="two">II</span></h1>
+        <form class="monster-search">
+            <input type="text" name="monster-input" id="monster-input">
+            <button class="btn-search" disabled><i class="fa-solid fa-magnifying-glass"></i></button>
+        </form>
+        <div class="nav-bar">
+            <button id="show-monsters">Monsters</button>
+            <button id="show-artifacts">Artifacts</button>
+            <select name="monster-categories" id="monster-categories">
+                <option value="all">All</option>
+                <option value="knight">Knight</option>
+                <option value="barbarian">Barbarian</option>
+                <option value="sorceress">Sorceress</option>
+                <option value="wizard">Wizard</option>
+                <option value="warlock">Warlock</option>
+                <option value="necromancer">Necromancer</option>
+                <option value="neutral">Neutral</option>
+            </select>
+            <select name="artifact-categories" id="artifact-categories">
+                <option value="all">All</option>
+                <option value="adventure">Adventure</option>
+                <option value="attack-defense">Attack & Defense</option>
+                <option value="morale-luck">Morale & Luck</option>
+                <option value="resource">Resource</option>
+                <option value="spell">Spell</option>
+                <option value="spell-power-knowledge">Spell Power & Knowledge</option>
+                <option value="utility">Utility</option>
+                <option value="ultimate">Ultimate</option>
+            </select>
+        </div>
+    </nav>
+    
     <div id="landing-container">
         <h1 id="landing-title"><span class="heroes">Heroes</span> of Might & Magic <span class="two">II</span></h1>
         <h3 class="landing-welcome">Welcome to The Fan-Made <span class="heroes-two">Heroes II</span> Monster Database!</h3>
@@ -25,95 +53,6 @@
         <input class="landing-btn" type="button" value="Database">
     </div>
     <div class="monster-container"></div>
-    <div class="artifact-container">
-        <div class="artifact-card">
-            <div class="artifact-img">
-                <div class="artifact-img-container">
-                    <img src="artifact-images/adventure/power_ring.png" alt="">
-                </div>
-                <p class="artifact-id">#001</p>
-                <p class="artifact-name">Power Ring</p>
-                <p class="artifact-category">Adventure</p>
-            </div>
-            <p class="artifact-effect">+2 spell points return each turn</p>
-        </div>
-        <div class="artifact-card">
-            <div class="artifact-img">
-                <div class="artifact-img-container">
-                    <img src="artifact-images/adventure/power_ring.png" alt="">
-                </div>
-                <p class="artifact-id">#001</p>
-                <p class="artifact-name">Power Ring</p>
-                <p class="artifact-category">Adventure</p>
-            </div>
-            <p class="artifact-effect">+2 spell points return each turn</p>
-        </div>
-        <div class="artifact-card">
-            <div class="artifact-img">
-                <div class="artifact-img-container">
-                    <img src="artifact-images/adventure/power_ring.png" alt="">
-                </div>
-                <p class="artifact-id">#001</p>
-                <p class="artifact-name">Power Ring</p>
-                <p class="artifact-category">Adventure</p>
-            </div>
-            <p class="artifact-effect">+2 spell points return each turn</p>
-        </div>
-        <div class="artifact-card">
-            <div class="artifact-img">
-                <div class="artifact-img-container">
-                    <img src="artifact-images/adventure/power_ring.png" alt="">
-                </div>
-                <p class="artifact-id">#001</p>
-                <p class="artifact-name">Power Ring</p>
-                <p class="artifact-category">Adventure</p>
-            </div>
-            <p class="artifact-effect">+2 spell points return each turn</p>
-        </div>
-        <div class="artifact-card">
-            <div class="artifact-img">
-                <div class="artifact-img-container">
-                    <img src="artifact-images/adventure/power_ring.png" alt="">
-                </div>
-                <p class="artifact-id">#001</p>
-                <p class="artifact-name">Power Ring</p>
-                <p class="artifact-category">Adventure</p>
-            </div>
-            <p class="artifact-effect">+2 spell points return each turn</p>
-        </div>
-        <div class="artifact-card">
-            <div class="artifact-img">
-                <div class="artifact-img-container">
-                    <img src="artifact-images/adventure/power_ring.png" alt="">
-                </div>
-                <p class="artifact-id">#001</p>
-                <p class="artifact-name">Power Ring</p>
-                <p class="artifact-category">Adventure</p>
-            </div>
-            <p class="artifact-effect">+2 spell points return each turn</p>
-        </div>
-        <div class="artifact-card">
-            <div class="artifact-img">
-                <div class="artifact-img-container">
-                    <img src="artifact-images/adventure/power_ring.png" alt="">
-                </div>
-                <p class="artifact-id">#001</p>
-                <p class="artifact-name">Power Ring</p>
-                <p class="artifact-category">Adventure</p>
-            </div>
-            <p class="artifact-effect">+2 spell points return each turn</p>
-        </div>
-        <div class="artifact-card">
-            <div class="artifact-img">
-                <div class="artifact-img-container">
-                    <img src="artifact-images/adventure/power_ring.png" alt="">
-                </div>
-                <p class="artifact-id">#001</p>
-                <p class="artifact-name">Power Ring</p>
-                <p class="artifact-category">Adventure</p>
-            </div>
-            <p class="artifact-effect">+2 spell points return each turn</p>
-        </div>
-    </div>
+    <div class="artifact-container"></div>
 </body>
 </html>

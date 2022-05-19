@@ -11,29 +11,65 @@ const colors = {
     neutral: "#000000"
 };
 
+const artifactColors = {
+    blue: "blue",
+    purple: "purple"
+};
+
 const landingBtn = document.querySelector('.landing-btn');
 const landingContainer = document.querySelector('#landing-container');
 const monsterCard = document.getElementsByClassName('monster-card');
 const monsterSearch = document.querySelector('.monster-search');
 const pageTitle = document.querySelector('#page-title');
 
+const artifactCard = document.getElementsByClassName('artifact-card');
+const showMonsters = document.getElementById('show-monsters');
+const showArtifacts = document.getElementById('show-artifacts');
+const navBar = document.getElementById('nav-container');
+const monsterCategories = document.getElementById('monster-categories');
+const artifactCategories = document.getElementById('artifact-categories');
+
+const monsterContainer = document.querySelector('.monster-container');
+const artifactContainer = document.querySelector('.artifact-container');
+const searchInput = document.querySelector('#monster-input');
+
 landingBtn.addEventListener('click', function() {
     landingContainer.style.display = "none";
+    navBar.style.display = "flex";
+    pageTitle.style.display = "block";
+    monsterSearch.style.display = "flex";
+});
+
+showMonsters.addEventListener('click', function() {
     for (let i = 0; i < monsterCard.length; i++) {
         monsterCard[i].style.display = "block";
-        console.log(i)
     };
     monsterSearch.style.display = "flex";
     pageTitle.style.display = "block";
+    monsterCategories.style.display = "inline";
+    artifactCategories.style.display = "none";
+    for (let i = 0; i < artifactCard.length; i++) {
+        artifactCard[i].style.display = "none";
+    };
+});
+
+showArtifacts.addEventListener('click', function() {
+    for (let i = 0; i < artifactCard.length; i++) {
+        artifactCard[i].style.display = "block";
+    };
+    monsterSearch.style.display = "none";
+    pageTitle.style.display = "block";
+    artifactCategories.style.display = "inline";
+    monsterCategories.style.display = "none";
+    for (let i = 0; i < monsterCard.length; i++) {
+        monsterCard[i].style.display = "none";
+    };
 });
 
 window.addEventListener('DOMContentLoaded', function() {
     displayMonsterCards(monsterData);
     displayArtifactCards(artifactData);
 });
-
-const monsterContainer = document.querySelector('.monster-container');
-const searchInput = document.querySelector('#monster-input');
 
 function displayMonsterCards(monsterCards) {
     let displayCards = monsterCards.map(function(monster) {
@@ -103,25 +139,34 @@ function displayMonsterCards(monsterCards) {
     monsterContainer.innerHTML = displayCards;
 };
 
+function displayArtifactCards(artifactCard) {
+    let displayCards = artifactCard.map(function(artifact) {
+        let artifactBgc = artifact.bgc;
+        let borderColor = artifactColors[artifactBgc];
+
+        for(let i = 0; i <= artifactData.length; i++) {
+            return `
+            <div class="artifact-card" style="border: 8px solid ${borderColor};">
+            <div class="artifact-img">
+                <div class="artifact-img-container">
+                    <img src="${artifact.image}" alt="${artifact.name}">
+                </div>
+                <p class="artifact-id">#${artifact.id}</p>
+                <p class="artifact-name">${artifact.name}</p>
+                <p class="artifact-category">${artifact.category}</p>
+            </div>
+            <p class="artifact-effect">${artifact.effect}</p>
+        </div>
+        `;
+        };
+    });
+    displayCards = displayCards.join('');
+    artifactContainer.innerHTML = displayCards;
+};
+
 searchInput.addEventListener('input', function(e) {
-    // const monsterId = document.querySelectorAll('.monster-id');
     const monsterNames = document.querySelectorAll('.monster-name');
-    // const monsterFaction = document.querySelectorAll('.monster-faction');
-    // const monsterTier = document.querySelectorAll('.monster-tier');
-    // const monsterUpgraded = document.querySelectorAll('.monster-upgraded');
-    // const monsterSize = document.querySelectorAll('.monster-size');
-    // const monsterAttackType = document.querySelectorAll('.monster-attack-type');
-    // const monsterMovement = document.querySelectorAll('.monster-movement');
-    // const monsterSpeed = document.querySelectorAll('.monster-stat-speed');
-    
     const search = searchInput.value.toLowerCase();
-    
-    // monsterId.forEach(monsterName => {
-    //     monsterName.parentElement.parentElement.style.display = "block";
-    //     if(!monsterName.innerHTML.toLowerCase().includes(search)) {
-    //         monsterName.parentElement.parentElement.style.display = "none";
-    //     };
-    // });
     
     monsterNames.forEach(monsterName => {
         monsterName.parentElement.parentElement.style.display = "block";
@@ -132,12 +177,3 @@ searchInput.addEventListener('input', function(e) {
 
 });
 
-// function filterMonster(e) {
-//     const search = searchInput.value.toLowerCase();
-//     e.forEach(monsterName => {
-//         monsterName.parentElement.parentElement.style.display = "block";
-//         if(!monsterName.innerHTML.toLowerCase().includes(search)) {
-//             monsterName.parentElement.parentElement.style.display = "none";
-//         };
-//     });
-// };

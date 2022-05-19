@@ -37,7 +37,7 @@
         "category": "adventure",
         "effect": "increase hero's movement speed on sea",
         "bgc": "blue",
-        "image": "artifact-images/adventure/sailor_s_astrolabe_of_mobility"
+        "image": "artifact-images/adventure/sailor_s_astrolabe_of_mobility.png"
     },
     {
         "id": "006",
@@ -45,6 +45,6 @@
         "category": "adventure",
         "effect": "increase hero's movement speed on land and sea",
         "bgc": "blue",
-        "image": "artifact-images/adventure/true_compass_of_mobility"
+        "image": "artifact-images/adventure/true_compass_of_mobility.png"
     }
 ]
