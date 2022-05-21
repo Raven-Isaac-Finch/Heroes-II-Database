@@ -11,7 +11,7 @@
         "id": "002",
         "name": "telescope",
         "category": "adventure",
-        "effect": "viewing range +1",
+        "effect": "Viewing range +1",
         "bgc": "blue",
         "image": "artifact-images/adventure/telescope.png"
     },
@@ -19,7 +19,7 @@
         "id": "003",
         "name": "nomad's boots of mobility",
         "category": "adventure",
-        "effect": "increase hero's movement speed on land",
+        "effect": "Increase hero's movement speed on land",
         "bgc": "blue",
         "image": "artifact-images/adventure/nomad_s_boots_of_mobility.png"
     },
@@ -27,7 +27,7 @@
         "id": "004",
         "name": "traveller's boots of mobility",
         "category": "adventure",
-        "effect": "increase hero's movement speed on land",
+        "effect": "Increase hero's movement speed on land",
         "bgc": "blue",
         "image": "artifact-images/adventure/traveller_s_boots_of_mobility.png"
     },
@@ -35,7 +35,7 @@
         "id": "005",
         "name": "sailor's astrolabe of mobility",
         "category": "adventure",
-        "effect": "increase hero's movement speed on sea",
+        "effect": "Increase hero's movement speed on sea",
         "bgc": "blue",
         "image": "artifact-images/adventure/sailor_s_astrolabe_of_mobility.png"
     },
@@ -43,8 +43,128 @@
         "id": "006",
         "name": "true compass of mobility",
         "category": "adventure",
-        "effect": "increase hero's movement speed on land and sea",
+        "effect": "Increase hero's movement speed on land and sea",
         "bgc": "blue",
         "image": "artifact-images/adventure/true_compass_of_mobility.png"
+    },
+    {
+        "id": "007",
+        "name": "giant flail of dominion",
+        "category": "attack & defense",
+        "effect": "+1 attack to your hero",
+        "bgc": "red",
+        "image": "artifact-images/attack_defense/giant_flail_of_dominion.png"
+    },
+    {
+        "id": "008",
+        "name": "thunder mace of dominion",
+        "category": "attack & defense",
+        "effect": "+1 attack to your hero",
+        "bgc": "red",
+        "image": "artifact-images/attack_defense/thunder_mace_of_dominion.png"
+    },
+    {
+        "id": "009",
+        "name": "power axe of dominion",
+        "category": "attack & defense",
+        "effect": "+2 attack to your hero",
+        "bgc": "red",
+        "image": "artifact-images/attack_defense/power_axe_of_dominion.png"
+    },
+    {
+        "id": "010",
+        "name": "",
+        "category": "attack & defense",
+        "effect": "",
+        "bgc": "red",
+        "image": "artifact-images/attack_defense/.png"
+    },
+    {
+        "id": "011",
+        "name": "",
+        "category": "attack & defense",
+        "effect": "",
+        "bgc": "red",
+        "image": "artifact-images/attack_defense/.png"
+    },
+    {
+        "id": "012",
+        "name": "",
+        "category": "attack & defense",
+        "effect": "",
+        "bgc": "red",
+        "image": "artifact-images/attack_defense/.png"
+    },
+    {
+        "id": "013",
+        "name": "",
+        "category": "attack & defense",
+        "effect": "",
+        "bgc": "red",
+        "image": "artifact-images/attack_defense/.png"
+    },
+    {
+        "id": "014",
+        "name": "",
+        "category": "attack & defense",
+        "effect": "",
+        "bgc": "red",
+        "image": "artifact-images/attack_defense/.png"
+    },
+    {
+        "id": "015",
+        "name": "",
+        "category": "attack & defense",
+        "effect": "",
+        "bgc": "red",
+        "image": "artifact-images/attack_defense/.png"
+    },
+    {
+        "id": "016",
+        "name": "",
+        "category": "attack & defense",
+        "effect": "",
+        "bgc": "red",
+        "image": "artifact-images/attack_defense/.png"
+    },
+    {
+        "id": "017",
+        "name": "",
+        "category": "attack & defense",
+        "effect": "",
+        "bgc": "red",
+        "image": "artifact-images/attack_defense/.png"
+    },
+    {
+        "id": "018",
+        "name": "",
+        "category": "attack & defense",
+        "effect": "",
+        "bgc": "red",
+        "image": "artifact-images/attack_defense/.png"
+    },
+    {
+        "id": "019",
+        "name": "",
+        "category": "attack & defense",
+        "effect": "",
+        "bgc": "red",
+        "image": "artifact-images/attack_defense/.png"
+    },
+    {
+        "id": "020",
+        "name": "",
+        "category": "attack & defense",
+        "effect": "",
+        "bgc": "red",
+        "image": "artifact-images/attack_defense/.png"
+    },
+    {
+        "id": "021",
+        "name": "",
+        "category": "attack & defense",
+        "effect": "",
+        "bgc": "red",
+        "image": "artifact-images/attack_defense/.png"
     }
 ]

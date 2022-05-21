@@ -63,7 +63,7 @@ body {
 .nav-bar button,
 #monster-categories,
 #artifact-categories {
-    margin: 0 10px 20px 0;
+    margin: 0 10px 10px 0;
     padding: 15px 30px;
     border-radius: 15px;
     border: 0;
@@ -72,6 +72,7 @@ body {
     font-size: 1.2rem;
     transition: 0.2s ease-in-out;
     box-shadow: var(--shadow-primary);
+    cursor: pointer;
 }
 
 #monster-categories,
@@ -96,7 +97,7 @@ body {
     width: 100%;
     justify-content: center;
     align-items: center;
-    margin: 2.5rem 0;
+    margin: 1rem 0;
     display: none;
 }
 
@@ -122,9 +123,21 @@ body {
     justify-content: center;
 }
 
-.monster-card,
-.artifact-card {
+.monster-card {
     width: 300px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px; 
+    padding: 10px;
+    margin: 5px 10px;
+    background: linear-gradient(gray, lightgrey);
+    text-transform: capitalize;
+    display: none;
+    transition: 0.2s ease-in-out;
+}
+
+.artifact-card {
+    width: 180px;
     display: flex;
     flex-direction: column;
     border-radius: 15px; 
@@ -177,7 +190,7 @@ body {
     grid-row: 2 / 3;
 }
 
-/*-------------------- Monster Cards Style --------------------*/
+/*-------------------- Monster & Artifact Cards Style --------------------*/
 .monster-img,
 .artifact-img {
     display: flex;
@@ -185,6 +198,10 @@ body {
     align-items: center;
     flex-direction: column;
     text-align: center;
+}
+
+.artifact-img {
+    height: 180px;
 }
 
 .monster-id,
@@ -213,10 +230,15 @@ body {
 .monster-info,
 .artifact-effect {
     font-style: italic;
-    font-size: var(--fs-normal);
+    font-size: var(--fs-small);
     text-align: center;
     text-transform: initial;
     margin-top: 15px;
+}
+
+.effect-container {
+    text-align: center;
+    margin-bottom: 5px;
 }
 
 .monster-stats-header h5 {
@@ -230,10 +252,18 @@ body {
     width: 50%;
 }
 
-.monster-name,
-.artifact-name {
+.monster-name {
     font-size: var(--fs-normal-plus);
-    margin: 1px 0;
+    font-weight: bold;
+    margin: 3px 0;
+}
+
+.artifact-name {
+    font-size: var(--fs-normal);
+    font-weight: bold;
+    margin: 3px 0;
+    width: 100%;
+    height: 40px;
 }
 
 /*-------------------- Landing Page Style --------------------*/
@@ -275,6 +305,7 @@ body {
     font-size: var(--fs-normal-plus);
     font-family: var(--font-primary);
     margin-bottom: 20px;
+    cursor: pointer;
 }
 
 .landing-btn:hover {

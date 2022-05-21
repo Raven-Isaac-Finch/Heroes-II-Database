@@ -13,7 +13,8 @@ const colors = {
 
 const artifactColors = {
     blue: "blue",
-    purple: "purple"
+    purple: "purple",
+    red: "red"
 };
 
 const landingBtn = document.querySelector('.landing-btn');
@@ -33,6 +34,8 @@ const monsterContainer = document.querySelector('.monster-container');
 const artifactContainer = document.querySelector('.artifact-container');
 const searchInput = document.querySelector('#monster-input');
 
+let tokenForSearch;
+
 landingBtn.addEventListener('click', function() {
     landingContainer.style.display = "none";
     navBar.style.display = "flex";
@@ -51,19 +54,20 @@ showMonsters.addEventListener('click', function() {
     for (let i = 0; i < artifactCard.length; i++) {
         artifactCard[i].style.display = "none";
     };
+    tokenForSearch = "monsters";
 });
 
 showArtifacts.addEventListener('click', function() {
     for (let i = 0; i < artifactCard.length; i++) {
         artifactCard[i].style.display = "block";
     };
-    monsterSearch.style.display = "none";
     pageTitle.style.display = "block";
     artifactCategories.style.display = "inline";
     monsterCategories.style.display = "none";
     for (let i = 0; i < monsterCard.length; i++) {
         monsterCard[i].style.display = "none";
     };
+    tokenForSearch = "artifacts";
 });
 
 window.addEventListener('DOMContentLoaded', function() {
@@ -78,7 +82,7 @@ function displayMonsterCards(monsterCards) {
 
         for(let i = 0; i <= monsterData.length; i++) {
             return `
-            <div class="monster-card" style="border: 8px solid ${borderColor};">
+            <div class="monster-card" style="border: 4px solid ${borderColor};">
                 <div class="monster-img">
                     <div class="img-container">
                         <img src="${monster.image}" alt="${monster.name}">
@@ -146,17 +150,19 @@ function displayArtifactCards(artifactCard) {
 
         for(let i = 0; i <= artifactData.length; i++) {
             return `
-            <div class="artifact-card" style="border: 8px solid ${borderColor};">
-            <div class="artifact-img">
-                <div class="artifact-img-container">
-                    <img src="${artifact.image}" alt="${artifact.name}">
+            <div class="artifact-card" style="border: 4px solid ${borderColor};">
+                <div class="artifact-img">
+                    <div class="artifact-img-container">
+                        <img src="${artifact.image}" alt="${artifact.name}">
+                    </div>
+                    <p class="artifact-id">#${artifact.id}</p>
+                    <p class="artifact-name">${artifact.name}</p>
+                    <p class="artifact-category">${artifact.category}</p>
                 </div>
-                <p class="artifact-id">#${artifact.id}</p>
-                <p class="artifact-name">${artifact.name}</p>
-                <p class="artifact-category">${artifact.category}</p>
+                <div class="effect-container">
+                    <p class="artifact-effect">${artifact.effect}</p>
+                </div>
             </div>
-            <p class="artifact-effect">${artifact.effect}</p>
-        </div>
         `;
         };
     });
@@ -166,14 +172,23 @@ function displayArtifactCards(artifactCard) {
 
 searchInput.addEventListener('input', function(e) {
     const monsterNames = document.querySelectorAll('.monster-name');
+    const artifactNames = document.querySelectorAll('.artifact-name');
     const search = searchInput.value.toLowerCase();
     
-    monsterNames.forEach(monsterName => {
-        monsterName.parentElement.parentElement.style.display = "block";
-        if(!monsterName.innerHTML.toLowerCase().includes(search)) {
-            monsterName.parentElement.parentElement.style.display = "none";
-        };
-    });
-
+    if(tokenForSearch === "monsters") {
+        monsterNames.forEach(monsterName => {
+            monsterName.parentElement.parentElement.style.display = "block";
+            if(!monsterName.innerHTML.toLowerCase().includes(search)) {
+                monsterName.parentElement.parentElement.style.display = "none";
+            };
+        });
+    } else {
+        artifactNames.forEach(artifactName => {
+            artifactName.parentElement.parentElement.style.display = "block";
+            if(!artifactName.innerHTML.toLowerCase().includes(search)) {
+                artifactName.parentElement.parentElement.style.display = "none";
+            };
+        });
+    };
 });
 
