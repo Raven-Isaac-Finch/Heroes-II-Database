@@ -73,98 +73,586 @@
     },
     {
         "id": "010",
-        "name": "",
+        "name": "dragon sword of dominion",
         "category": "attack & defense",
-        "effect": "",
+        "effect": "+3 attack to your hero",
         "bgc": "red",
-        "image": "artifact-images/attack_defense/.png"
+        "image": "artifact-images/attack_defense/dragon_sword_of_dominion.png"
     },
     {
         "id": "011",
-        "name": "",
+        "name": "defender helm of protection",
         "category": "attack & defense",
-        "effect": "",
+        "effect": "+1 defense to your hero",
         "bgc": "red",
-        "image": "artifact-images/attack_defense/.png"
+        "image": "artifact-images/attack_defense/defender_helm_of_protection.png"
     },
     {
         "id": "012",
-        "name": "",
+        "name": "armored gauntlets of protection",
         "category": "attack & defense",
-        "effect": "",
+        "effect": "+2 defense to your hero",
         "bgc": "red",
-        "image": "artifact-images/attack_defense/.png"
+        "image": "artifact-images/attack_defense/armored_gauntlets_of_protection.png"
     },
     {
         "id": "013",
-        "name": "",
+        "name": "stealth shield of protection",
         "category": "attack & defense",
-        "effect": "",
+        "effect": "+2 defense to your hero",
         "bgc": "red",
-        "image": "artifact-images/attack_defense/.png"
+        "image": "artifact-images/attack_defense/stealth_shield_of_protection.png"
     },
     {
         "id": "014",
-        "name": "",
+        "name": "divine breastplate of protection",
         "category": "attack & defense",
-        "effect": "",
+        "effect": "+3 defense to your hero",
         "bgc": "red",
-        "image": "artifact-images/attack_defense/.png"
+        "image": "artifact-images/attack_defense/divine_breastplate_of_protection.png"
     },
     {
         "id": "015",
-        "name": "",
+        "name": "spiked helm",
         "category": "attack & defense",
-        "effect": "",
+        "effect": "+1 attack & +1 defense to your hero",
         "bgc": "red",
-        "image": "artifact-images/attack_defense/.png"
+        "image": "artifact-images/attack_defense/spiked_helm.png"
     },
     {
         "id": "016",
-        "name": "",
+        "name": "spiked shield",
         "category": "attack & defense",
-        "effect": "",
+        "effect": "+2 attack & +2 defense to your hero",
         "bgc": "red",
-        "image": "artifact-images/attack_defense/.png"
+        "image": "artifact-images/attack_defense/spiked_shield.png"
     },
     {
         "id": "017",
-        "name": "",
+        "name": "ammo cart",
         "category": "attack & defense",
-        "effect": "",
+        "effect": "Endless ammunition for all troops",
         "bgc": "red",
-        "image": "artifact-images/attack_defense/.png"
+        "image": "artifact-images/attack_defense/ammo_cart.png"
     },
     {
         "id": "018",
-        "name": "",
+        "name": "golden bow",
         "category": "attack & defense",
-        "effect": "",
+        "effect": "Eliminates the shooting penalty for all troops",
         "bgc": "red",
-        "image": "artifact-images/attack_defense/.png"
+        "image": "artifact-images/attack_defense/golden_bow.png"
     },
     {
         "id": "019",
-        "name": "",
+        "name": "ballista of quickness",
         "category": "attack & defense",
-        "effect": "",
+        "effect": "+1 extra catapult shot",
         "bgc": "red",
-        "image": "artifact-images/attack_defense/.png"
+        "image": "artifact-images/attack_defense/ballista_of_quickness.png"
     },
     {
         "id": "020",
-        "name": "",
+        "name": "lightning helm",
         "category": "attack & defense",
-        "effect": "",
+        "effect": "All troops take half damage from lightning spells",
         "bgc": "red",
-        "image": "artifact-images/attack_defense/.png"
+        "image": "artifact-images/attack_defense/lightning_helm.png"
     },
     {
         "id": "021",
-        "name": "",
+        "name": "hideous mask",
         "category": "attack & defense",
-        "effect": "",
+        "effect": "Wandering armies cannot join your hero",
         "bgc": "red",
-        "image": "artifact-images/attack_defense/.png"
+        "image": "artifact-images/attack_defense/hideous_mask.png"
+    },
+    {
+        "id": "022",
+        "name": "medal of distinction",
+        "category": "morale & luck",
+        "effect": "+1 morale to your hero",
+        "bgc": "purple",
+        "image": "artifact-images/morale_luck/medal_of_distinction.png"
+    },
+    {
+        "id": "023",
+        "name": "medal of honor",
+        "category": "morale & luck",
+        "effect": "+1 morale to your hero",
+        "bgc": "purple",
+        "image": "artifact-images/morale_luck/medal_of_honor.png"
+    },
+    {
+        "id": "024",
+        "name": "medal of courage",
+        "category": "morale & luck",
+        "effect": "+1 morale to your hero",
+        "bgc": "purple",
+        "image": "artifact-images/morale_luck/medal_of_courage.png"
+    },
+    {
+        "id": "025",
+        "name": "medal of valor",
+        "category": "morale & luck",
+        "effect": "+1 morale to your hero",
+        "bgc": "purple",
+        "image": "artifact-images/morale_luck/medal_of_valor.png"
+    },
+    {
+        "id": "026",
+        "name": "lucky rabbit's foot",
+        "category": "morale & luck",
+        "effect": "+1 luck to your hero",
+        "bgc": "blue",
+        "image": "artifact-images/morale_luck/lucky_rabbit_s_foot.png"
+    },
+    {
+        "id": "027",
+        "name": "gambler's lucky coin",
+        "category": "morale & luck",
+        "effect": "+1 luck to your hero",
+        "bgc": "blue",
+        "image": "artifact-images/morale_luck/gambler_s_lucky_coin.png"
+    },
+    {
+        "id": "028",
+        "name": "four-leaf clover",
+        "category": "morale & luck",
+        "effect": "+1 luck to your hero",
+        "bgc": "blue",
+        "image": "artifact-images/morale_luck/four_leaf_clover.png"
+    },
+    {
+        "id": "029",
+        "name": "golden horseshoe",
+        "category": "morale & luck",
+        "effect": "+1 luck to your hero",
+        "bgc": "blue",
+        "image": "artifact-images/morale_luck/golden_horseshoe.png"
+    },
+    {
+        "id": "030",
+        "name": "fizbin of misfortune",
+        "category": "morale & luck",
+        "effect": "-2 morale to your hero",
+        "bgc": "purple",
+        "image": "artifact-images/morale_luck/fizbin_of_misfortune.png"
+    },
+    {
+        "id": "031",
+        "name": "endless purse of gold",
+        "category": "resource",
+        "effect": "+500 gold per day",
+        "bgc": "green",
+        "image": "artifact-images/resource/endless_purse_of_gold.png"
+    },
+    {
+        "id": "032",
+        "name": "endless bag of gold",
+        "category": "resource",
+        "effect": "+750 gold per day",
+        "bgc": "green",
+        "image": "artifact-images/resource/endless_bag_of_gold.png"
+    },
+    {
+        "id": "033",
+        "name": "endless sack of gold",
+        "category": "resource",
+        "effect": "+1000 gold per day",
+        "bgc": "green",
+        "image": "artifact-images/resource/endless_sack_of_gold.png"
+    },
+    {
+        "id": "034",
+        "name": "endless cord of wood",
+        "category": "resource",
+        "effect": "+1 wood per day",
+        "bgc": "blue",
+        "image": "artifact-images/resource/endless_cord_of_wood.png"
+    },
+    {
+        "id": "035",
+        "name": "endless cart of ore",
+        "category": "resource",
+        "effect": "+1 ore per day",
+        "bgc": "blue",
+        "image": "artifact-images/resource/endless_cart_of_ore.png"
+    },
+    {
+        "id": "036",
+        "name": "endless vial of mercury",
+        "category": "resource",
+        "effect": "+1 mercury per day",
+        "bgc": "blue",
+        "image": "artifact-images/resource/endless_vial_of_mercury.png"
+    },
+    {
+        "id": "037",
+        "name": "endless pouch of crystal",
+        "category": "resource",
+        "effect": "+1 crystal per day",
+        "bgc": "green",
+        "image": "artifact-images/resource/endless_pouch_of_crystal.png"
+    },
+    {
+        "id": "038",
+        "name": "endless pouch of sulfur",
+        "category": "resource",
+        "effect": "+1 sulfur per day",
+        "bgc": "green",
+        "image": "artifact-images/resource/endless_pouch_of_sulfur.png"
+    },
+    {
+        "id": "039",
+        "name": "endless pouch of gems",
+        "category": "resource",
+        "effect": "+1 gem per day",
+        "bgc": "green",
+        "image": "artifact-images/resource/endless_pouch_of_gems.png"
+    },
+    {
+        "id": "040",
+        "name": "ankh",
+        "category": "spell",
+        "effect": "Doubles the effect of resurrect and animate spells",
+        "bgc": "purple",
+        "image": "artifact-images/spell/ankh.png"
+    },
+    {
+        "id": "041",
+        "name": "elemental ring",
+        "category": "spell",
+        "effect": "Halves the cost of all summoning spells",
+        "bgc": "purple",
+        "image": "artifact-images/spell/elemental_ring.png"
+    },
+    {
+        "id": "042",
+        "name": "enchanted hourglass",
+        "category": "spell",
+        "effect": "+2 duration to all spells",
+        "bgc": "blue",
+        "image": "artifact-images/spell/enchanted_hourglass.png"
+    },
+    {
+        "id": "043",
+        "name": "evercold icicle",
+        "category": "spell",
+        "effect": "+50% damage to cold spells",
+        "bgc": "blue",
+        "image": "artifact-images/spell/evercold_icicle.png"
+    },
+    {
+        "id": "044",
+        "name": "everhot lava rock",
+        "category": "spell",
+        "effect": "+50% damage to fire spells",
+        "bgc": "blue",
+        "image": "artifact-images/spell/everhot_lava_rock.png"
+    },
+    {
+        "id": "045",
+        "name": "evil eye",
+        "category": "spell",
+        "effect": "Halves the cost of curse spells",
+        "bgc": "blue",
+        "image": "artifact-images/spell/evil_eye.png"
+    },
+    {
+        "id": "046",
+        "name": "gold watch",
+        "category": "spell",
+        "effect": "Doubles the effect of hypnotize spells",
+        "bgc": "purple",
+        "image": "artifact-images/spell/gold_watch.png"
+    },
+    {
+        "id": "047",
+        "name": "holy pendant",
+        "category": "spell",
+        "effect": "All troops are immune to curse spells",
+        "bgc": "purple",
+        "image": "artifact-images/spell/holy_pendant.png"
+    },
+    {
+        "id": "048",
+        "name": "kinetic pendant",
+        "category": "spell",
+        "effect": "All troops are immune to paralyze spells",
+        "bgc": "purple",
+        "image": "artifact-images/spell/kinetic_pendant.png"
+    },
+    {
+        "id": "049",
+        "name": "lightning rod",
+        "category": "spell",
+        "effect": "+50% damage to lightning spells",
+        "bgc": "blue",
+        "image": "artifact-images/spell/lightning_rod.png"
+    },
+    {
+        "id": "050",
+        "name": "pendant of death",
+        "category": "spell",
+        "effect": "All troops are immune to holy spells",
+        "bgc": "purple",
+        "image": "artifact-images/spell/pendant_of_death.png"
+    },
+    {
+        "id": "051",
+        "name": "pendant of free will",
+        "category": "spell",
+        "effect": "All troops are immune to hypnotize spells",
+        "bgc": "purple",
+        "image": "artifact-images/spell/pendant_of_free_will.png"
+    },
+    {
+        "id": "052",
+        "name": "pendant of life",
+        "category": "spell",
+        "effect": "All troops are immune to death spells",
+        "bgc": "purple",
+        "image": "artifact-images/spell/pendant_of_life.png"
+    },
+    {
+        "id": "053",
+        "name": "seeing-eye pendant",
+        "category": "spell",
+        "effect": "All troops are immune to blind spells",
+        "bgc": "purple",
+        "image": "artifact-images/spell/seeing_eye_pendant.png"
+    },
+    {
+        "id": "054",
+        "name": "serenity pendant",
+        "category": "spell",
+        "effect": "All troops are immune to berserk spells",
+        "bgc": "purple",
+        "image": "artifact-images/spell/serenity_pendant.png"
+    },
+    {
+        "id": "055",
+        "name": "snake ring",
+        "category": "spell",
+        "effect": "Halves the cost of all bless spells",
+        "bgc": "purple",
+        "image": "artifact-images/spell/snake_ring.png"
+    },
+    {
+        "id": "056",
+        "name": "wand of negation",
+        "category": "spell",
+        "effect": "All troops are immune to dispell magic spells",
+        "bgc": "blue",
+        "image": "artifact-images/spell/wand_of_negation.png"
+    },
+    {
+        "id": "057",
+        "name": "book of elements",
+        "category": "spell",
+        "effect": "Doubles the effect of summoning spells",
+        "bgc": "green",
+        "image": "artifact-images/spell/book_of_elements.png"
+    },
+    {
+        "id": "058",
+        "name": "skullcap",
+        "category": "spell",
+        "effect": "Halves the cost of mind spells",
+        "bgc": "green",
+        "image": "artifact-images/spell/skullcap.png"
+    },
+    {
+        "id": "059",
+        "name": "wizard's hat",
+        "category": "spell",
+        "effect": "+10 duration to all spells",
+        "bgc": "green",
+        "image": "artifact-images/spell/wizard_s_hat.png"
+    },
+    {
+        "id": "060",
+        "name": "caster's bracelet of magic",
+        "category": "spellpower & knowledge",
+        "effect": "+2 spell power to your hero",
+        "bgc": "purple",
+        "image": "artifact-images/spellpower_knowledge/caster_s_bracelet_of_magic.png"
+    },
+    {
+        "id": "061",
+        "name": "mage's ring of power",
+        "category": "spellpower & knowledge",
+        "effect": "+2 spell power to your hero",
+        "bgc": "purple",
+        "image": "artifact-images/spellpower_knowledge/mage_s_ring_of_power.png"
+    },
+    {
+        "id": "062",
+        "name": "witch's broach of magic",
+        "category": "spellpower & knowledge",
+        "effect": "+3 spell power to your hero",
+        "bgc": "purple",
+        "image": "artifact-images/spellpower_knowledge/witch_s_broach_of_magic.png"
+    },
+    {
+        "id": "063",
+        "name": "arcane necklace of magic",
+        "category": "spellpower & knowledge",
+        "effect": "+4 spell power to your hero",
+        "bgc": "purple",
+        "image": "artifact-images/spellpower_knowledge/arcane_necklace_of_magic.png"
+    },
+    {
+        "id": "064",
+        "name": "black pearl",
+        "category": "spellpower & knowledge",
+        "effect": "+2 spell power & +2 knowledge to your hero",
+        "bgc": "purple",
+        "image": "artifact-images/spellpower_knowledge/black_pearl.png"
+    },
+    {
+        "id": "065",
+        "name": "white pearl",
+        "category": "spellpower & knowledge",
+        "effect": "+1 spell power & +1 knowledge to your hero",
+        "bgc": "purple",
+        "image": "artifact-images/spellpower_knowledge/white_pearl.png"
+    },
+    {
+        "id": "066",
+        "name": "minor scroll of knowledge",
+        "category": "spellpower & knowledge",
+        "effect": "+2 knowledge to your hero",
+        "bgc": "green",
+        "image": "artifact-images/spellpower_knowledge/minor_scroll_of_knowledge.png"
+    },
+    {
+        "id": "067",
+        "name": "major scroll of knowledge",
+        "category": "spellpower & knowledge",
+        "effect": "+3 knowledge to your hero",
+        "bgc": "green",
+        "image": "artifact-images/spellpower_knowledge/major_scroll_of_knowledge.png"
+    },
+    {
+        "id": "068",
+        "name": "superior scroll of knowledge",
+        "category": "spellpower & knowledge",
+        "effect": "+4 knowledge to your hero",
+        "bgc": "green",
+        "image": "artifact-images/spellpower_knowledge/superior_scroll_of_knowledge.png"
+    },
+    {
+        "id": "069",
+        "name": "foremost scroll of knowledge",
+        "category": "spellpower & knowledge",
+        "effect": "+5 knowledge to your hero",
+        "bgc": "green",
+        "image": "artifact-images/spellpower_knowledge/foremost_scroll_of_knowledge.png"
+    },
+    {
+        "id": "070",
+        "name": "ultimate sword of dominion",
+        "category": "ultimate",
+        "effect": "+12 attack to your hero",
+        "bgc": "yellow",
+        "image": "artifact-images/ultimate/u_sword_of_dominion.png"
+    },
+    {
+        "id": "071",
+        "name": "ultimate cloak of protection",
+        "category": "ultimate",
+        "effect": "+12 defense to your hero",
+        "bgc": "yellow",
+        "image": "artifact-images/ultimate/u_cloak_of_protection.png"
+    },
+    {
+        "id": "072",
+        "name": "ultimate wand of magic",
+        "category": "ultimate",
+        "effect": "+12 spell power to your hero",
+        "bgc": "yellow",
+        "image": "artifact-images/ultimate/u_wand_of_magic.png"
+    },
+    {
+        "id": "073",
+        "name": "ultimate book of knowledge",
+        "category": "ultimate",
+        "effect": "+12 knowledge to your hero",
+        "bgc": "yellow",
+        "image": "artifact-images/ultimate/u_book_of_knowledge.png"
+    },
+    {
+        "id": "074",
+        "name": "ultimate shield",
+        "category": "ultimate",
+        "effect": "+6 attack and +6 defense to your hero",
+        "bgc": "yellow",
+        "image": "artifact-images/ultimate/u_shield.png"
+    },
+    {
+        "id": "075",
+        "name": "ultimate staff",
+        "category": "ultimate",
+        "effect": "+6 spell power and +6 knowledge to your hero",
+        "bgc": "yellow",
+        "image": "artifact-images/ultimate/u_staff.png"
+    },
+    {
+        "id": "076",
+        "name": "ultimate crown",
+        "category": "ultimate",
+        "effect": "+4 to each skill of your hero",
+        "bgc": "yellow",
+        "image": "artifact-images/ultimate/u_crown.png"
+    },
+    {
+        "id": "077",
+        "name": "golden goose",
+        "category": "ultimate",
+        "effect": "+10,000 gold per day",
+        "bgc": "yellow",
+        "image": "artifact-images/ultimate/golden_goose.png"
+    },
+    {
+        "id": "078",
+        "name": "fire cloak",
+        "category": "utility",
+        "effect": "Halves damage of fire spells",
+        "bgc": "green",
+        "image": "artifact-images/utility/fire_cloak.png"
+    },
+    {
+        "id": "079",
+        "name": "ice cloak",
+        "category": "utility",
+        "effect": "Halves damage of ice spells",
+        "bgc": "green",
+        "image": "artifact-images/utility/ice_cloak.png"
+    },
+    {
+        "id": "080",
+        "name": "spell book",
+        "category": "utility",
+        "effect": "Contains spell of your hero",
+        "bgc": "green",
+        "image": "artifact-images/utility/spell_book.png"
+    },
+    {
+        "id": "081",
+        "name": "tax lien",
+        "category": "utility",
+        "effect": "-250 gold per day",
+        "bgc": "",
+        "image": "artifact-images/utility/tax_lien.png"
+    },
+    {
+        "id": "082",
+        "name": "statesman's quill",
+        "category": "utility",
+        "effect": "Cost of surrender is 10% of your army",
+        "bgc": "green",
+        "image": "artifact-images/utility/statesman_s_quill.png"
     }
 ]

@@ -14,7 +14,9 @@ const colors = {
 const artifactColors = {
     blue: "blue",
     purple: "purple",
-    red: "red"
+    red: "red",
+    green: "green",
+    yellow: "yellow"
 };
 
 const landingBtn = document.querySelector('.landing-btn');
@@ -27,8 +29,6 @@ const artifactCard = document.getElementsByClassName('artifact-card');
 const showMonsters = document.getElementById('show-monsters');
 const showArtifacts = document.getElementById('show-artifacts');
 const navBar = document.getElementById('nav-container');
-const monsterCategories = document.getElementById('monster-categories');
-const artifactCategories = document.getElementById('artifact-categories');
 
 const monsterContainer = document.querySelector('.monster-container');
 const artifactContainer = document.querySelector('.artifact-container');
@@ -49,8 +49,6 @@ showMonsters.addEventListener('click', function() {
     };
     monsterSearch.style.display = "flex";
     pageTitle.style.display = "block";
-    monsterCategories.style.display = "inline";
-    artifactCategories.style.display = "none";
     for (let i = 0; i < artifactCard.length; i++) {
         artifactCard[i].style.display = "none";
     };
@@ -62,8 +60,6 @@ showArtifacts.addEventListener('click', function() {
         artifactCard[i].style.display = "block";
     };
     pageTitle.style.display = "block";
-    artifactCategories.style.display = "inline";
-    monsterCategories.style.display = "none";
     for (let i = 0; i < monsterCard.length; i++) {
         monsterCard[i].style.display = "none";
     };

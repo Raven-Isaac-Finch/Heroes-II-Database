@@ -60,9 +60,7 @@ body {
     box-shadow: var(--shadow-primary);
 }
 
-.nav-bar button,
-#monster-categories,
-#artifact-categories {
+.nav-bar button {
     margin: 0 10px 10px 0;
     padding: 15px 30px;
     border-radius: 15px;
@@ -73,11 +71,6 @@ body {
     transition: 0.2s ease-in-out;
     box-shadow: var(--shadow-primary);
     cursor: pointer;
-}
-
-#monster-categories,
-#artifact-categories {
-    display: none;
 }
 
 .nav-bar button:hover {
